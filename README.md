@@ -1,5 +1,7 @@
 # Azure CSP Migration Assessment Tool
 
+![Version](https://img.shields.io/badge/version-1.1.0-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen) ![Angular](https://img.shields.io/badge/angular-17-red)
+
 Upload an Azure resource export (.xlsx) and instantly assess migration readiness across three modes — **Subscription Move**, **Region Move**, and **Jio Region Availability** — powered by 790+ live rules fetched from Microsoft's official documentation.
 
 ## Architecture
@@ -146,3 +148,12 @@ The RESOURCE TYPE column accepts both Azure portal display names (e.g. "Virtual 
 - **Phase 2** ✅ — Region move assessment + Jio region availability
 - **Phase 3** ✅ — Live rules from Microsoft Learn with caching + periodic refresh
 - **Phase 4** — Azure login + live validation with Azure move validation APIs
+
+## Version History
+
+See [CHANGELOG.md](CHANGELOG.md) for a detailed list of changes in each version.
+
+| Version | Date | Highlights |
+|---------|------|------------|
+| 1.1.0 | 2026-05-15 | Periodic 6-hour rule refresh, Live/Static badge fix, README overhaul |
+| 1.0.0 | 2026-05-15 | Initial release — 3 assessment modes, live rules, rich Excel reports |
