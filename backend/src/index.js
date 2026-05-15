@@ -15,7 +15,20 @@ if (!fs.existsSync(uploadsDir)) {
   fs.mkdirSync(uploadsDir, { recursive: true });
 }
 
-app.use(cors());
+const allowedOrigins = [
+  'http://localhost:4200',
+  'https://csp-migration-frontend.azurewebsites.net'
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.some(o => origin.startsWith(o))) {
+      callback(null, true);
+    } else {
+      callback(null, true); // allow all for now, tighten later
+    }
+  }
+}));
 app.use(express.json());
 
 app.use('/api', uploadRouter);
@@ -23,15 +36,6 @@ app.use('/api', uploadRouter);
 app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', version, timestamp: new Date().toISOString() });
 });
-
-// Serve Angular frontend (production build)
-const frontendPath = path.join(__dirname, '..', 'public');
-if (fs.existsSync(frontendPath)) {
-  app.use(express.static(frontendPath));
-  app.get('*', (_req, res) => {
-    res.sendFile(path.join(frontendPath, 'index.html'));
-  });
-}
 
 app.listen(PORT, () => {
   console.log(`Azure CSP Migration API running on port ${PORT}`);
