@@ -24,6 +24,15 @@ app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', version, timestamp: new Date().toISOString() });
 });
 
+// Serve Angular frontend (production build)
+const frontendPath = path.join(__dirname, '..', 'public');
+if (fs.existsSync(frontendPath)) {
+  app.use(express.static(frontendPath));
+  app.get('*', (_req, res) => {
+    res.sendFile(path.join(frontendPath, 'index.html'));
+  });
+}
+
 app.listen(PORT, () => {
   console.log(`Azure CSP Migration API running on port ${PORT}`);
 });

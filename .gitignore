@@ -5,3 +5,5 @@ uploads/
 *.xlsx
 !test-resources.xlsx
 ~$*
+deploy.zip
+deploy-temp/
