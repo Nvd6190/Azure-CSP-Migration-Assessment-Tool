@@ -1,0 +1,1217 @@
+{
+  "_metadata": {
+    "source": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources",
+    "lastUpdated": "2026-05-06",
+    "description": "Azure resource move support matrix - subscription to subscription. Values verified against official Microsoft documentation."
+  },
+  "rules": {
+    "microsoft.aad/domainservices": {
+      "subscriptionMove": "No",
+      "remarks": "Azure AD Domain Services cannot be moved."
+    },
+    "microsoft.compute/availabilitysets": {
+      "subscriptionMove": "Yes",
+      "remarks": "Move all VMs in the set together. Use Azure Resource Mover."
+    },
+    "microsoft.compute/diskaccesses": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.compute/diskencryptionsets": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.compute/disks": {
+      "subscriptionMove": "Yes",
+      "remarks": "Managed disks can be moved. Use Azure Resource Mover."
+    },
+    "microsoft.compute/galleries": {
+      "subscriptionMove": "No",
+      "remarks": "Shared Image Galleries cannot be moved across subscriptions."
+    },
+    "microsoft.compute/galleries/images": {
+      "subscriptionMove": "No",
+      "remarks": "Gallery images cannot be moved across subscriptions."
+    },
+    "microsoft.compute/galleries/images/versions": {
+      "subscriptionMove": "No",
+      "remarks": "Gallery image versions cannot be moved across subscriptions."
+    },
+    "microsoft.compute/hostgroups": {
+      "subscriptionMove": "No",
+      "remarks": "Dedicated host groups cannot be moved."
+    },
+    "microsoft.compute/hostgroups/hosts": {
+      "subscriptionMove": "No",
+      "remarks": "Dedicated hosts cannot be moved."
+    },
+    "microsoft.compute/images": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.compute/proximityplacementgroups": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.compute/restorepointcollections": {
+      "subscriptionMove": "No",
+      "remarks": "Restore point collections cannot be moved across subscriptions."
+    },
+    "microsoft.compute/snapshots": {
+      "subscriptionMove": "Conditional",
+      "remarks": "Full snapshots: Yes. Incremental snapshots: No. Cannot move incremental snapshots across subscriptions."
+    },
+    "microsoft.compute/sshpublickeys": {
+      "subscriptionMove": "No",
+      "remarks": "SSH public keys cannot be moved across subscriptions."
+    },
+    "microsoft.compute/virtualmachines": {
+      "subscriptionMove": "Yes",
+      "remarks": "Validate dependent NIC, disk, and public IP before move. VMs in availability sets must be moved together. Use Azure Resource Mover."
+    },
+    "microsoft.compute/virtualmachines/extensions": {
+      "subscriptionMove": "Yes",
+      "remarks": "VM extensions move with the VM."
+    },
+    "microsoft.compute/virtualmachinescalesets": {
+      "subscriptionMove": "Yes",
+      "remarks": "Move with associated load balancer and public IP."
+    },
+    "microsoft.compute/capacityreservationgroups": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.compute/cloudservices": {
+      "subscriptionMove": "No",
+      "remarks": "Cloud Services (extended support) - see move guidance for classic deployment model."
+    },
+    "microsoft.network/applicationgateways": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved. Recreate in target subscription."
+    },
+    "microsoft.network/applicationgatewaywebapplicationfirewallpolicies": {
+      "subscriptionMove": "No",
+      "remarks": "WAF policies cannot be moved across subscriptions."
+    },
+    "microsoft.network/applicationsecuritygroups": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/azurefirewalls": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved. Recreate in target subscription."
+    },
+    "microsoft.network/bastionhosts": {
+      "subscriptionMove": "No",
+      "remarks": "Bastion hosts cannot be moved across subscriptions."
+    },
+    "microsoft.network/connections": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/ddoscustompolicies": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/ddosprotectionplans": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved. Recreate and reassociate."
+    },
+    "microsoft.network/dnszones": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/expressroutecircuits": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved. Recreate in target subscription."
+    },
+    "microsoft.network/expressroutegateways": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.network/firewallpolicies": {
+      "subscriptionMove": "No",
+      "remarks": "Firewall policies cannot be moved across subscriptions."
+    },
+    "microsoft.network/frontdoors": {
+      "subscriptionMove": "No",
+      "remarks": "Front Door (classic) cannot be moved. Migrate to Standard/Premium (under Microsoft.Cdn) first."
+    },
+    "microsoft.network/ipallocations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/ipgroups": {
+      "subscriptionMove": "No",
+      "remarks": "IP groups cannot be moved across subscriptions."
+    },
+    "microsoft.network/loadbalancers": {
+      "subscriptionMove": "Conditional",
+      "remarks": "Basic SKU: Yes. Standard SKU: No for subscription move. All backend pool resources must be moved for Standard."
+    },
+    "microsoft.network/localnetworkgateways": {
+      "subscriptionMove": "Yes",
+      "remarks": "Local network gateways can be moved across subscriptions. Verify VPN connection settings after move."
+    },
+    "microsoft.network/natgateways": {
+      "subscriptionMove": "No",
+      "remarks": "NAT Gateways cannot be moved across subscriptions."
+    },
+    "microsoft.network/networkinterfaces": {
+      "subscriptionMove": "Yes",
+      "remarks": "Move with the associated VM. Use Azure Resource Mover."
+    },
+    "microsoft.network/networksecuritygroups": {
+      "subscriptionMove": "Yes",
+      "remarks": "Use Azure Resource Mover."
+    },
+    "microsoft.network/networkwatchers": {
+      "subscriptionMove": "No",
+      "remarks": "Network Watcher must exist per region per subscription. Delete and recreate."
+    },
+    "microsoft.network/networkwatchers/connectionmonitors": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.network/networkwatchers/flowlogs": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.network/p2svpngateways": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.network/privatednszones": {
+      "subscriptionMove": "Yes",
+      "remarks": "VNet links must be deleted before move and recreated after."
+    },
+    "microsoft.network/privatednszones/virtualnetworklinks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/privateendpoints": {
+      "subscriptionMove": "Conditional",
+      "remarks": "Yes for supported private-link resource types. No for all other private-link resources. Verify your specific private endpoint type."
+    },
+    "microsoft.network/privatelinkservices": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.network/publicipaddresses": {
+      "subscriptionMove": "Yes",
+      "remarks": "See Networking move guidance. IP addresses are not retained when using Azure Resource Mover."
+    },
+    "microsoft.network/publicipprefixes": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/routefilters": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.network/routetables": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/securitypartnerproviders": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/serviceendpointpolicies": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/trafficmanagerprofiles": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/virtualhubs": {
+      "subscriptionMove": "No",
+      "remarks": "Virtual Hubs cannot be moved across subscriptions."
+    },
+    "microsoft.network/virtualnetworkgateways": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved. Recreate in target subscription."
+    },
+    "microsoft.network/virtualnetworks": {
+      "subscriptionMove": "Yes",
+      "remarks": "All dependent resources (subnets, peerings) must be reviewed. VNet peerings must be deleted and recreated."
+    },
+    "microsoft.network/virtualrouters": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/virtualwans": {
+      "subscriptionMove": "No",
+      "remarks": "Virtual WANs cannot be moved across subscriptions."
+    },
+    "microsoft.network/vpngateways": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved. Recreate in target subscription."
+    },
+    "microsoft.network/networkvirtualappliances": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.network/privatednsresolver": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.storage/storageaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": "Both source and target subscriptions must be registered with the same resource provider."
+    },
+    "microsoft.classicstorage/storageaccounts": {
+      "subscriptionMove": "No",
+      "remarks": "Classic storage accounts cannot be moved across subscriptions. Migrate to ARM first."
+    },
+    "microsoft.sql/servers": {
+      "subscriptionMove": "Yes",
+      "remarks": "Server and all its databases must be moved together."
+    },
+    "microsoft.sql/servers/databases": {
+      "subscriptionMove": "Yes",
+      "remarks": "Must be moved with the parent server."
+    },
+    "microsoft.sql/servers/elasticpools": {
+      "subscriptionMove": "Yes",
+      "remarks": "Must be moved with the parent server."
+    },
+    "microsoft.sql/managedinstances": {
+      "subscriptionMove": "No",
+      "remarks": "SQL Managed Instances cannot be moved across subscriptions."
+    },
+    "microsoft.sql/managedinstances/databases": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved. Child of managed instance."
+    },
+    "microsoft.sql/servers/failovergroups": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved. Delete and recreate after moving server."
+    },
+    "microsoft.sql/virtualclusters": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.sql/instancepools": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.dbformysql/servers": {
+      "subscriptionMove": "Yes",
+      "remarks": "Use cross-region read replica to move an existing server."
+    },
+    "microsoft.dbformysql/flexibleservers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.dbforpostgresql/servers": {
+      "subscriptionMove": "Yes",
+      "remarks": "Use cross-region read replica to move an existing server."
+    },
+    "microsoft.dbforpostgresql/flexibleservers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.dbforpostgresql/servergroups": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.dbforpostgresql/serversv2": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.dbformariadb/servers": {
+      "subscriptionMove": "Yes",
+      "remarks": "Use cross-region read replica to move an existing server."
+    },
+    "microsoft.documentdb/databaseaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": "Cosmos DB accounts using the RU architecture can be moved. vCore-based (mongoClusters, cassandraClusters) cannot."
+    },
+    "microsoft.documentdb/mongoclusters": {
+      "subscriptionMove": "No",
+      "remarks": "MongoDB vCore clusters cannot be moved across subscriptions."
+    },
+    "microsoft.documentdb/cassandraclusters": {
+      "subscriptionMove": "No",
+      "remarks": "Cassandra clusters cannot be moved across subscriptions."
+    },
+    "microsoft.cache/redis": {
+      "subscriptionMove": "Yes",
+      "remarks": "If configured with a virtual network, the instance cannot be moved to a different subscription."
+    },
+    "microsoft.cache/redisenterprise": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.web/sites": {
+      "subscriptionMove": "Yes",
+      "remarks": "App Service apps move with the App Service plan. Custom domains with SSL may need re-binding. See App Service move guidance."
+    },
+    "microsoft.web/sites/slots": {
+      "subscriptionMove": "Yes",
+      "remarks": "Deployment slots move with the app."
+    },
+    "microsoft.web/sites/premieraddons": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/serverfarms": {
+      "subscriptionMove": "Yes",
+      "remarks": "All apps in the plan must be moved together."
+    },
+    "microsoft.web/certificates": {
+      "subscriptionMove": "Yes",
+      "remarks": "App Service certificates can be moved but may need re-binding. Managed certificates cannot be moved."
+    },
+    "microsoft.web/staticsites": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/connectiongateways": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/connections": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/customapis": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/kubeenvironments": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/hostingenvironments": {
+      "subscriptionMove": "No",
+      "remarks": "App Service Environments cannot be moved."
+    },
+    "microsoft.containerservice/managedclusters": {
+      "subscriptionMove": "No",
+      "remarks": "AKS clusters cannot be moved across subscriptions. Recreate in target subscription."
+    },
+    "microsoft.containerservice/containerservices": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.containerservice/openshiftmanagedclusters": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.containerregistry/registries": {
+      "subscriptionMove": "Yes",
+      "remarks": "Target subscription must have the resource provider registered."
+    },
+    "microsoft.containerregistry/registries/replications": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries/webhooks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries/tasks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.containerinstance/containergroups": {
+      "subscriptionMove": "No",
+      "remarks": "Container instances cannot be moved. Recreate in target subscription."
+    },
+    "microsoft.app/containerapps": {
+      "subscriptionMove": "Review",
+      "remarks": "Container Apps not explicitly listed in official move support docs. Verify manually on Microsoft Learn."
+    },
+    "microsoft.app/managedenvironments": {
+      "subscriptionMove": "Yes",
+      "remarks": "Container Apps managed environments can be moved across subscriptions."
+    },
+    "microsoft.keyvault/vaults": {
+      "subscriptionMove": "Yes",
+      "remarks": "Key Vault must have soft-delete enabled. Key Vaults used to encrypt disks cannot be moved. Update access policies after move."
+    },
+    "microsoft.keyvault/managedhsms": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.managedidentity/userassignedidentities": {
+      "subscriptionMove": "No",
+      "remarks": "User-assigned managed identities cannot be moved across subscriptions."
+    },
+    "microsoft.authorization/roleassignments": {
+      "subscriptionMove": "No",
+      "remarks": "Role assignments are not resources that move. Recreate in target scope."
+    },
+    "microsoft.authorization/policydefinitions": {
+      "subscriptionMove": "No",
+      "remarks": "Custom policies must be recreated in target subscription."
+    },
+    "microsoft.authorization/policyassignments": {
+      "subscriptionMove": "No",
+      "remarks": "Policy assignments must be recreated in target subscription."
+    },
+    "microsoft.authorization/locks": {
+      "subscriptionMove": "No",
+      "remarks": "Resource locks must be removed before move and recreated after."
+    },
+    "microsoft.insights/metricalerts": {
+      "subscriptionMove": "No",
+      "remarks": "Metric alert rules cannot be moved. Recreate in target subscription."
+    },
+    "microsoft.insights/activitylogalerts": {
+      "subscriptionMove": "No",
+      "remarks": "Activity log alerts cannot be moved. Recreate in target subscription."
+    },
+    "microsoft.insights/scheduledqueryrules": {
+      "subscriptionMove": "Yes",
+      "remarks": "Scheduled query rules (log alert rules) can be moved across subscriptions."
+    },
+    "microsoft.insights/actiongroups": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/components": {
+      "subscriptionMove": "Yes",
+      "remarks": "Application Insights components can be moved. Moving changes the resource ID which affects data access."
+    },
+    "microsoft.insights/datacollectionrules": {
+      "subscriptionMove": "No",
+      "remarks": "Data collection rules cannot be moved across subscriptions."
+    },
+    "microsoft.insights/autoscalesettings": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/alertrules": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/workbooks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/workbooktemplates": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/webtests": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/privatelinkscopes": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.insights/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/workspaces": {
+      "subscriptionMove": "Yes",
+      "remarks": "Workspaces linked to automation accounts must be unlinked first. Solutions linked to the workspace must be moved separately. Check subscription quotas."
+    },
+    "microsoft.operationalinsights/clusters": {
+      "subscriptionMove": "No",
+      "remarks": "Log Analytics clusters cannot be moved across subscriptions."
+    },
+    "microsoft.operationsmanagement/solutions": {
+      "subscriptionMove": "Yes",
+      "remarks": "Move with the associated Log Analytics workspace."
+    },
+    "microsoft.operationsmanagement/managementconfigurations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.operationsmanagement/views": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.automation/automationaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": "Runbooks must exist in the same resource group. Managed identities move automatically with the account."
+    },
+    "microsoft.automation/automationaccounts/configurations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.automation/automationaccounts/runbooks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.logic/workflows": {
+      "subscriptionMove": "Yes",
+      "remarks": "Logic Apps (Consumption) can be moved."
+    },
+    "microsoft.logic/integrationaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.logic/integrationserviceenvironments": {
+      "subscriptionMove": "No",
+      "remarks": "Integration Service Environments cannot be moved across subscriptions."
+    },
+    "microsoft.servicebus/namespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventhub/namespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventhub/clusters": {
+      "subscriptionMove": "Yes",
+      "remarks": "Dedicated Event Hub clusters can be moved across subscriptions."
+    },
+    "microsoft.relay/namespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.notificationhubs/namespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.notificationhubs/namespaces/notificationhubs": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.cognitiveservices/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": "Includes Azure OpenAI, Azure AI Services, and all Cognitive Services resources."
+    },
+    "microsoft.machinelearningservices/workspaces": {
+      "subscriptionMove": "No",
+      "remarks": "Azure ML workspaces cannot be moved across subscriptions."
+    },
+    "microsoft.machinelearning/workspaces": {
+      "subscriptionMove": "Yes",
+      "remarks": "Classic Machine Learning workspaces can be moved."
+    },
+    "microsoft.search/searchservices": {
+      "subscriptionMove": "Yes",
+      "remarks": "Cannot move several Search resources from different regions in one operation."
+    },
+    "microsoft.signalrservice/signalr": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.apimanagement/service": {
+      "subscriptionMove": "Yes",
+      "remarks": "API Management set to Consumption SKU cannot be moved."
+    },
+    "microsoft.cdn/profiles": {
+      "subscriptionMove": "Yes",
+      "remarks": "Azure Front Door Standard/Premium objects appear under Microsoft.Cdn provider."
+    },
+    "microsoft.cdn/profiles/endpoints": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.cdn/cdnwebapplicationfirewallpolicies": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.media/mediaservices": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.media/mediaservices/liveevents": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.media/mediaservices/streamingendpoints": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.batch/batchaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": "Cannot be moved directly from one region to another. Use template export/deploy."
+    },
+    "microsoft.recoveryservices/vaults": {
+      "subscriptionMove": "Yes",
+      "remarks": "Disable backup items or stop replication first. Cross-region move via Azure Backup is not supported."
+    },
+    "microsoft.dataprotection/backupvaults": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.migrate/projects": {
+      "subscriptionMove": "No",
+      "remarks": "Azure Migrate projects cannot be moved."
+    },
+    "microsoft.migrate/assessmentprojects": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.datamigration/services": {
+      "subscriptionMove": "No",
+      "remarks": "Database Migration Service cannot be moved."
+    },
+    "microsoft.datamigration/sqlmigrationservices": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.datafactory/factories": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.datafactory/datafactories": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.databricks/workspaces": {
+      "subscriptionMove": "No",
+      "remarks": "Databricks workspaces cannot be moved across subscriptions."
+    },
+    "microsoft.databricks/accessconnectors": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.synapse/workspaces": {
+      "subscriptionMove": "No",
+      "remarks": "Synapse workspaces cannot be moved across subscriptions."
+    },
+    "microsoft.synapse/workspaces/bigdatapools": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.synapse/workspaces/sqlpools": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.hdinsight/clusters": {
+      "subscriptionMove": "Yes",
+      "remarks": "Move other resources (e.g. storage account) first, then move HDInsight cluster on its own. Cannot move networking resources across subscriptions."
+    },
+    "microsoft.analysisservices/servers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.streamanalytics/streamingjobs": {
+      "subscriptionMove": "Yes",
+      "remarks": "Job must be stopped before moving. Cannot be in running state."
+    },
+    "microsoft.streamanalytics/clusters": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.devices/iothubs": {
+      "subscriptionMove": "Yes",
+      "remarks": "Clone hub for region move."
+    },
+    "microsoft.devices/provisioningservices": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.iotcentral/iotapps": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.timeseriesinsights/environments": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.timeseriesinsights/environments/eventsources": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.timeseriesinsights/environments/referencedatasets": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.maps/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": "Azure Maps is a geospatial service."
+    },
+    "microsoft.portal/dashboards": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.powerbidedicated/capacities": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.powerbi/workspacecollections": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.purview/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.kusto/clusters": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/clusters": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/managedclusters": {
+      "subscriptionMove": "No",
+      "remarks": "Managed clusters cannot be moved across subscriptions."
+    },
+    "microsoft.alertsmanagement/smartdetectoralertrules": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alertprocessingrules": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.security/automations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.security/iotsecuritysolutions": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/connectors": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.resources/resourcegroups": {
+      "subscriptionMove": "No",
+      "remarks": "Resource groups themselves cannot be moved. Move the resources inside them."
+    },
+    "microsoft.classiccompute/virtualmachines": {
+      "subscriptionMove": "Yes",
+      "remarks": "Classic VMs can be moved across subscriptions. See classic deployment model move guidance."
+    },
+    "microsoft.classiccompute/domainnames": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.classicnetwork/virtualnetworks": {
+      "subscriptionMove": "No",
+      "remarks": "Classic virtual networks cannot be moved across subscriptions."
+    },
+    "microsoft.classicnetwork/networksecuritygroups": {
+      "subscriptionMove": "No",
+      "remarks": "Classic NSGs cannot be moved."
+    },
+    "microsoft.advisor/configurations": {
+      "subscriptionMove": "No",
+      "remarks": "Advisor configurations are subscription-scoped."
+    },
+    "microsoft.blueprint/blueprintassignments": {
+      "subscriptionMove": "No",
+      "remarks": "Blueprint assignments cannot be moved."
+    },
+    "microsoft.maintenance/maintenanceconfigurations": {
+      "subscriptionMove": "No",
+      "remarks": "Maintenance configurations cannot be moved across subscriptions."
+    },
+    "microsoft.desktopvirtualization/hostpools": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/applicationgroups": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/workspaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/scalingplans": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/appattachpackages": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.netapp/netappaccounts": {
+      "subscriptionMove": "No",
+      "remarks": "Azure NetApp Files cannot be moved across subscriptions."
+    },
+    "microsoft.netapp/netappaccounts/capacitypools": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.netapp/netappaccounts/capacitypools/volumes": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.appconfiguration/configurationstores": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.appplatform/spring": {
+      "subscriptionMove": "Yes",
+      "remarks": "Azure Spring Apps can be moved."
+    },
+    "microsoft.eventgrid/topics": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/domains": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/systemtopics": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/partnernamespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/partnertopics": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.communication/communicationservices": {
+      "subscriptionMove": "Yes",
+      "remarks": "Resources with attached phone numbers cannot be moved to subscriptions in different data locations."
+    },
+    "microsoft.healthcareapis/services": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.digitaltwins/digitaltwinsinstances": {
+      "subscriptionMove": "No",
+      "remarks": "Digital Twins instances cannot be moved. Recreate resources in new region."
+    },
+    "microsoft.botservice/botservices": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.datashare/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.datalakeanalytics/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.datalakestore/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.datacatalog/catalogs": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.devtestlab/labs": {
+      "subscriptionMove": "No",
+      "remarks": "DevTest Labs cannot be moved across subscriptions."
+    },
+    "microsoft.devtestlab/schedules": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.domainregistration/domains": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.certificateregistration/certificateorders": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.hybridcompute/machines": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.hybridcompute/machines/extensions": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.hybridcompute/privatelinkscopes": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.hybridcompute/licenses": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.hybriddata/datamanagers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.importexport/jobs": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.loadtestservice/loadtests": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.peering/peerings": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.peering/peeringservices": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.avs/privateclouds": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.azureactivedirectory/b2cdirectories": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.azuredata/sqlserverregistrations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.azurestack/registrations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.customproviders/resourceproviders": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/artifactsources": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/rollouts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/servicetopologies": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.devops/pipelines": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.enterpriseknowledgegraph/services": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.iotspaces/graph": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.mixedreality/remoterenderingaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/queries": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.saas/applications": {
+      "subscriptionMove": "No",
+      "remarks": "SaaS applications cannot be moved across subscriptions."
+    },
+    "microsoft.saas/resources": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.storagesync/storagesyncservices": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.token/stores": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.managednetwork/managednetworks": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.alertsmanagement/actionrules": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved. Recreate in target subscription."
+    },
+    "microsoft.kubernetes/connectedclusters": {
+      "subscriptionMove": "No",
+      "remarks": "Arc-enabled Kubernetes clusters cannot be moved."
+    },
+    "microsoft.redhatopenshift/openshiftclusters": {
+      "subscriptionMove": "No",
+      "remarks": "ARO clusters cannot be moved across subscriptions."
+    },
+    "microsoft.quantum/workspaces": {
+      "subscriptionMove": "No",
+      "remarks": "Quantum workspaces cannot be moved."
+    },
+    "microsoft.hardwaresecuritymodules/dedicatedhsms": {
+      "subscriptionMove": "No",
+      "remarks": "Dedicated HSMs cannot be moved."
+    },
+    "microsoft.sqlvirtualmachine/sqlvirtualmachines": {
+      "subscriptionMove": "No",
+      "remarks": "Delete SQL IaaS Agent extension, move the VM, then re-register."
+    },
+    "microsoft.sqlvirtualmachine/sqlvirtualmachinegroups": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.servicefabricmesh/applications": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/networks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/volumes": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/gateways": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/secrets": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.aadiam/privatelinkforazuread": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.aadiam/tenants": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.attestation/attestationproviders": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.azureactivedirectory/b2ctenants": {
+      "subscriptionMove": "No",
+      "remarks": "B2C tenants cannot be moved across subscriptions."
+    },
+    "microsoft.azurestackhci/clusters": {
+      "subscriptionMove": "No",
+      "remarks": "Azure Stack HCI clusters cannot be moved."
+    },
+    "microsoft.blockchain/blockchainmembers": {
+      "subscriptionMove": "No",
+      "remarks": "Blockchain network cannot have nodes in different regions."
+    },
+    "microsoft.confluent/organizations": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.datadog/monitors": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.elastic/monitors": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.extendedlocation/customlocations": {
+      "subscriptionMove": "No",
+      "remarks": "Custom locations cannot be moved."
+    },
+    "microsoft.genomics/accounts": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.labservices/labaccounts": {
+      "subscriptionMove": "No",
+      "remarks": "Lab accounts cannot be moved."
+    },
+    "microsoft.machinelearning/commitmentplans": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.machinelearning/webservices": {
+      "subscriptionMove": "No",
+      "remarks": "Classic ML web services cannot be moved across subscriptions."
+    },
+    "microsoft.network/networkintentpolicies": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/networkprofiles": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.network/virtualnetworktaps": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.network/vpnsites": {
+      "subscriptionMove": "No",
+      "remarks": "Virtual WAN VPN sites cannot be moved."
+    },
+    "microsoft.network/vpnserverconfigurations": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.operationalinsights/querypacks": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.servicenetworking/trafficcontrollers": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.solutions/applicationdefinitions": {
+      "subscriptionMove": "No",
+      "remarks": "Managed application definitions cannot be moved."
+    },
+    "microsoft.solutions/applications": {
+      "subscriptionMove": "No",
+      "remarks": "Managed applications cannot be moved."
+    },
+    "microsoft.mobilenetwork/mobilenetworks": {
+      "subscriptionMove": "No",
+      "remarks": "Private mobile networks cannot be moved across subscriptions."
+    },
+    "microsoft.storagecache/caches": {
+      "subscriptionMove": "No",
+      "remarks": "HPC Cache cannot be moved across subscriptions."
+    },
+    "microsoft.storsimple/managers": {
+      "subscriptionMove": "No",
+      "remarks": "StorSimple managers cannot be moved."
+    },
+    "microsoft.falcon/namespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.objectstore/osnamespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries/agentpools": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries/buildtasks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.sql/servers/jobaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": "Must be moved with the parent server."
+    },
+    "microsoft.sql/servers/jobagents": {
+      "subscriptionMove": "Yes",
+      "remarks": "Must be moved with the parent server."
+    },
+    "microsoft.sql/servers/databases/backuplongtermretentionpolicies": {
+      "subscriptionMove": "Yes",
+      "remarks": "Must be moved with the parent server."
+    },
+    "microsoft.devtestlab/labs/virtualmachines": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.devtestlab/labs/servicerunners": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    },
+    "microsoft.devtestlab/labs/environments": {
+      "subscriptionMove": "No",
+      "remarks": "Cannot be moved across subscriptions."
+    }
+  }
+}

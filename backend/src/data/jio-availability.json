@@ -1,0 +1,1512 @@
+{
+  "services": {
+    "application gateway : basic and standard and waf": {
+      "name": "Application Gateway : Basic and Standard and WAF",
+      "available": "Yes"
+    },
+    "azure cosmos db": {
+      "name": "Azure Cosmos DB",
+      "available": "Yes"
+    },
+    "azure dns": {
+      "name": "Azure DNS",
+      "available": "Yes"
+    },
+    "azure dns : azure dns public zones": {
+      "name": "Azure DNS : Azure DNS Public Zones",
+      "available": "Yes"
+    },
+    "azure dns : azure dns private zones": {
+      "name": "Azure DNS : Azure DNS private zones",
+      "available": "Yes"
+    },
+    "azure files": {
+      "name": "Azure Files",
+      "available": "Yes"
+    },
+    "azure files : geo redundant hdd storage": {
+      "name": "Azure Files : Geo redundant HDD storage",
+      "available": "Yes"
+    },
+    "azure files : locally redundant hdd storage": {
+      "name": "Azure Files : Locally redundant HDD storage",
+      "available": "Yes"
+    },
+    "azure files : provision v2": {
+      "name": "Azure Files : Provision v2",
+      "available": "Yes"
+    },
+    "azure kubernetes service (aks)": {
+      "name": "Azure Kubernetes Service (AKS)",
+      "available": "Yes"
+    },
+    "azure load balancer": {
+      "name": "Azure Load Balancer",
+      "available": "Yes"
+    },
+    "azure load balancer : basic": {
+      "name": "Azure Load Balancer : Basic",
+      "available": "Yes"
+    },
+    "azure load balancer : standard": {
+      "name": "Azure Load Balancer : Standard",
+      "available": "Yes"
+    },
+    "azure resource manager": {
+      "name": "Azure Resource Manager",
+      "available": "Yes"
+    },
+    "azure sql database": {
+      "name": "Azure SQL Database",
+      "available": "Yes"
+    },
+    "azure sql managed instance": {
+      "name": "Azure SQL Managed Instance",
+      "available": "Yes"
+    },
+    "azure service manager (rdfe)": {
+      "name": "Azure Service Manager (RDFE)",
+      "available": "Yes"
+    },
+    "azure stream analytics": {
+      "name": "Azure Stream Analytics",
+      "available": "Yes"
+    },
+    "backup": {
+      "name": "Backup",
+      "available": "Yes"
+    },
+    "bandwidth": {
+      "name": "Bandwidth",
+      "available": "Yes"
+    },
+    "event hubs": {
+      "name": "Event Hubs",
+      "available": "Yes"
+    },
+    "expressroute": {
+      "name": "ExpressRoute",
+      "available": "Yes"
+    },
+    "expressroute : expressroute gateways": {
+      "name": "ExpressRoute : ExpressRoute Gateways",
+      "available": "Yes"
+    },
+    "ip services": {
+      "name": "IP Services",
+      "available": "Yes"
+    },
+    "ip services : azure public ip address basic": {
+      "name": "IP Services : Azure Public IP Address Basic",
+      "available": "Yes"
+    },
+    "ip services : azure public ip address standard": {
+      "name": "IP Services : Azure Public IP Address Standard",
+      "available": "Yes"
+    },
+    "ip services : azure public ip prefix": {
+      "name": "IP Services : Azure Public IP Prefix",
+      "available": "Yes"
+    },
+    "key vault": {
+      "name": "Key Vault",
+      "available": "Yes"
+    },
+    "key vault : premium": {
+      "name": "Key Vault : Premium",
+      "available": "Yes"
+    },
+    "service bus": {
+      "name": "Service Bus",
+      "available": "Yes"
+    },
+    "service bus : premium": {
+      "name": "Service Bus : Premium",
+      "available": "Yes"
+    },
+    "service fabric": {
+      "name": "Service Fabric",
+      "available": "No"
+    },
+    "site recovery": {
+      "name": "Site Recovery",
+      "available": "Yes"
+    },
+    "storage": {
+      "name": "Storage",
+      "available": "Yes"
+    },
+    "storage : azure data lake storage gen2": {
+      "name": "Storage : Azure Data Lake Storage Gen2",
+      "available": "Yes"
+    },
+    "storage : disk storage": {
+      "name": "Storage : Disk Storage",
+      "available": "Yes"
+    },
+    "storage : hot/cool/cold blob storage tiers": {
+      "name": "Storage : Hot/Cool/Cold Blob Storage Tiers",
+      "available": "Yes"
+    },
+    "storage : managed disks": {
+      "name": "Storage : Managed Disks",
+      "available": "Yes"
+    },
+    "storage : queues": {
+      "name": "Storage : Queues",
+      "available": "Yes"
+    },
+    "storage : tables": {
+      "name": "Storage : Tables",
+      "available": "Yes"
+    },
+    "vpn gateway :": {
+      "name": "VPN Gateway :",
+      "available": "Yes"
+    },
+    "virtual machine scale sets": {
+      "name": "Virtual Machine Scale Sets",
+      "available": "Yes"
+    },
+    "virtual network": {
+      "name": "Virtual Network",
+      "available": "Yes"
+    },
+    "virtual network : global vnet peering": {
+      "name": "Virtual Network : Global Vnet Peering",
+      "available": "Yes"
+    },
+    "virtual network : virtual network peering": {
+      "name": "Virtual Network : Virtual Network Peering",
+      "available": "Yes"
+    },
+    "virtual network nat": {
+      "name": "Virtual Network NAT",
+      "available": "Yes"
+    },
+    "api management": {
+      "name": "API Management",
+      "available": "Yes"
+    },
+    "app service": {
+      "name": "App Service",
+      "available": "Yes"
+    },
+    "app service : app service basic [for feature creation] : app service linux": {
+      "name": "App Service : App Service Basic [for feature creation] : App Service Linux",
+      "available": "Yes"
+    },
+    "app service : app service basic [for feature creation] : web app linux": {
+      "name": "App Service : App Service Basic [for feature creation] : Web App Linux",
+      "available": "Yes"
+    },
+    "app service : app service basic [for feature creation] : web app for containers": {
+      "name": "App Service : App Service Basic [for feature creation] : Web App for Containers",
+      "available": "Yes"
+    },
+    "app service : app service environments": {
+      "name": "App Service : App Service Environments",
+      "available": "Yes"
+    },
+    "app service : app service environments : app service environments v3": {
+      "name": "App Service : App Service Environments : App Service Environments v3",
+      "available": "Yes"
+    },
+    "app service : app service free : web app": {
+      "name": "App Service : App Service Free : Web App",
+      "available": "Yes"
+    },
+    "app service : app service premium v3": {
+      "name": "App Service : App Service Premium v3",
+      "available": "Yes"
+    },
+    "azure active directory b2c": {
+      "name": "Azure Active Directory B2C",
+      "available": "Yes"
+    },
+    "azure active directory b2c : azure active directory b2c [for feature creation] : conditional access": {
+      "name": "Azure Active Directory B2C : Azure Active Directory B2C [for feature creation] : Conditional Access",
+      "available": "Yes"
+    },
+    "azure advisor": {
+      "name": "Azure Advisor",
+      "available": "Yes"
+    },
+    "azure app configuration": {
+      "name": "Azure App Configuration",
+      "available": "Yes"
+    },
+    "azure bastion": {
+      "name": "Azure Bastion",
+      "available": "Yes"
+    },
+    "azure communication services": {
+      "name": "Azure Communication Services",
+      "available": "Yes"
+    },
+    "azure ddos protection": {
+      "name": "Azure DDoS Protection",
+      "available": "Yes"
+    },
+    "azure ddos protection : ddos ip protection": {
+      "name": "Azure DDoS Protection : DDoS IP Protection",
+      "available": "Yes"
+    },
+    "azure data explorer": {
+      "name": "Azure Data Explorer",
+      "available": "Yes"
+    },
+    "azure database for mysql": {
+      "name": "Azure Database for MySQL",
+      "available": "Yes"
+    },
+    "azure database for mysql : azure database for mysql - flexible server": {
+      "name": "Azure Database for MySQL : Azure Database for MySQL - Flexible Server",
+      "available": "Yes"
+    },
+    "azure database for postgresql": {
+      "name": "Azure Database for PostgreSQL",
+      "available": "Yes"
+    },
+    "azure database for postgresql : azure database for postgresql - flexible server": {
+      "name": "Azure Database for PostgreSQL : Azure Database for PostgreSQL - Flexible Server",
+      "available": "Yes"
+    },
+    "azure files : locally redundant ssd storage": {
+      "name": "Azure Files : Locally redundant SSD storage",
+      "available": "Yes"
+    },
+    "azure firewall": {
+      "name": "Azure Firewall",
+      "available": "Yes"
+    },
+    "azure firewall : azure firewall basic": {
+      "name": "Azure Firewall : Azure Firewall Basic",
+      "available": "Yes"
+    },
+    "azure firewall : azure firewall premium": {
+      "name": "Azure Firewall : Azure Firewall Premium",
+      "available": "Yes"
+    },
+    "azure firewall : azure firewall standard": {
+      "name": "Azure Firewall : Azure Firewall Standard",
+      "available": "Yes"
+    },
+    "azure firewall manager": {
+      "name": "Azure Firewall Manager",
+      "available": "Yes"
+    },
+    "azure front door": {
+      "name": "Azure Front Door",
+      "available": "Yes"
+    },
+    "azure information protection": {
+      "name": "Azure Information Protection",
+      "available": "Yes"
+    },
+    "azure information protection : free": {
+      "name": "Azure Information Protection : Free",
+      "available": "Yes"
+    },
+    "azure information protection : premium p1": {
+      "name": "Azure Information Protection : Premium P1",
+      "available": "Yes"
+    },
+    "azure information protection : premium p2": {
+      "name": "Azure Information Protection : Premium P2",
+      "available": "Yes"
+    },
+    "azure lighthouse": {
+      "name": "Azure Lighthouse",
+      "available": "Yes"
+    },
+    "azure managed applications": {
+      "name": "Azure Managed Applications",
+      "available": "Yes"
+    },
+    "azure maps": {
+      "name": "Azure Maps",
+      "available": "No"
+    },
+    "azure migrate": {
+      "name": "Azure Migrate",
+      "available": "Yes"
+    },
+    "azure monitor": {
+      "name": "Azure Monitor",
+      "available": "Yes"
+    },
+    "azure monitor : application insights": {
+      "name": "Azure Monitor : Application Insights",
+      "available": "Yes"
+    },
+    "azure monitor : azure monitor essentials : action groups": {
+      "name": "Azure Monitor : Azure Monitor Essentials : Action Groups",
+      "available": "Yes"
+    },
+    "azure monitor : azure monitor essentials : activity log": {
+      "name": "Azure Monitor : Azure Monitor Essentials : Activity Log",
+      "available": "Yes"
+    },
+    "azure monitor : azure monitor essentials : alerts": {
+      "name": "Azure Monitor : Azure Monitor Essentials : Alerts",
+      "available": "Yes"
+    },
+    "azure monitor : azure monitor essentials : autoscale": {
+      "name": "Azure Monitor : Azure Monitor Essentials : AutoScale",
+      "available": "Yes"
+    },
+    "azure monitor : azure monitor essentials : diagnostic logs": {
+      "name": "Azure Monitor : Azure Monitor Essentials : Diagnostic Logs",
+      "available": "Yes"
+    },
+    "azure monitor : azure monitor essentials : metrics": {
+      "name": "Azure Monitor : Azure Monitor Essentials : Metrics",
+      "available": "Yes"
+    },
+    "azure monitor : log analytics": {
+      "name": "Azure Monitor : Log Analytics",
+      "available": "Yes"
+    },
+    "azure monitor : log analytics : container insights": {
+      "name": "Azure Monitor : Log Analytics : Container Insights",
+      "available": "Yes"
+    },
+    "azure monitor : log analytics : service map and vm insights": {
+      "name": "Azure Monitor : Log Analytics : Service Map and VM Insights",
+      "available": "Yes"
+    },
+    "azure policy": {
+      "name": "Azure Policy",
+      "available": "Yes"
+    },
+    "azure private link": {
+      "name": "Azure Private Link",
+      "available": "Yes"
+    },
+    "azure resource graph": {
+      "name": "Azure Resource Graph",
+      "available": "Yes"
+    },
+    "azure resource manager : azure resource manager : management groups": {
+      "name": "Azure Resource Manager : Azure Resource Manager : Management Groups",
+      "available": "Yes"
+    },
+    "azure route server": {
+      "name": "Azure Route Server",
+      "available": "Yes"
+    },
+    "azure signup portal": {
+      "name": "Azure Signup Portal",
+      "available": "Yes"
+    },
+    "azure stream analytics : stream analytics dedicated": {
+      "name": "Azure Stream Analytics : Stream Analytics Dedicated",
+      "available": "Yes"
+    },
+    "azure vm image builder": {
+      "name": "Azure VM Image Builder",
+      "available": "Yes"
+    },
+    "azure virtual desktop": {
+      "name": "Azure Virtual Desktop",
+      "available": "No"
+    },
+    "azure web application firewall": {
+      "name": "Azure Web Application Firewall",
+      "available": "Yes"
+    },
+    "azure web application firewall : azure web application firewall - global (waf on azure front door)": {
+      "name": "Azure Web Application Firewall : Azure Web Application Firewall - Global (WAF on Azure Front Door)",
+      "available": "Yes"
+    },
+    "azure web application firewall : azure web application firewall - regional (waf on application gateway)": {
+      "name": "Azure Web Application Firewall : Azure Web Application Firewall - Regional (WAF on Application Gateway)",
+      "available": "Yes"
+    },
+    "azure web application firewall : azure web application firewall – regional v2 (waf on application gateway v2)": {
+      "name": "Azure Web Application Firewall : Azure Web Application Firewall – Regional v2 (WAF on Application Gateway v2)",
+      "available": "Yes"
+    },
+    "batch": {
+      "name": "Batch",
+      "available": "Yes"
+    },
+    "cloud shell": {
+      "name": "Cloud Shell",
+      "available": "Yes"
+    },
+    "container instances": {
+      "name": "Container Instances",
+      "available": "Yes"
+    },
+    "container registry": {
+      "name": "Container Registry",
+      "available": "Yes"
+    },
+    "content delivery network": {
+      "name": "Content Delivery Network",
+      "available": "Yes"
+    },
+    "cost management": {
+      "name": "Cost Management",
+      "available": "Yes"
+    },
+    "cost management : connectors for aws": {
+      "name": "Cost Management : Connectors for AWS",
+      "available": "Yes"
+    },
+    "data factory": {
+      "name": "Data Factory",
+      "available": "Yes"
+    },
+    "event grid": {
+      "name": "Event Grid",
+      "available": "Yes"
+    },
+    "functions": {
+      "name": "Functions",
+      "available": "Yes"
+    },
+    "functions : consumption plan": {
+      "name": "Functions : Consumption Plan",
+      "available": "Yes"
+    },
+    "functions : dedicated plan": {
+      "name": "Functions : Dedicated Plan",
+      "available": "Yes"
+    },
+    "functions : dedicated plan linux": {
+      "name": "Functions : Dedicated Plan Linux",
+      "available": "Yes"
+    },
+    "functions : premium plan": {
+      "name": "Functions : Premium Plan",
+      "available": "Yes"
+    },
+    "functions : premium plan linux": {
+      "name": "Functions : Premium Plan Linux",
+      "available": "Yes"
+    },
+    "hdinsight": {
+      "name": "HDInsight",
+      "available": "Yes"
+    },
+    "intune": {
+      "name": "Intune",
+      "available": "Yes"
+    },
+    "logic apps": {
+      "name": "Logic Apps",
+      "available": "Yes"
+    },
+    "media services": {
+      "name": "Media Services",
+      "available": "No"
+    },
+    "microsoft azure peering service": {
+      "name": "Microsoft Azure Peering Service",
+      "available": "Yes"
+    },
+    "microsoft azure portal": {
+      "name": "Microsoft Azure portal",
+      "available": "Yes"
+    },
+    "microsoft azure portal : microsoft azure portal [for feature creation only] : azure billing extension": {
+      "name": "Microsoft Azure portal : Microsoft Azure portal [for feature creation only] : Azure Billing Extension",
+      "available": "Yes"
+    },
+    "microsoft azure portal : microsoft azure portal [for feature creation only] : marketplace": {
+      "name": "Microsoft Azure portal : Microsoft Azure portal [for feature creation only] : Marketplace",
+      "available": "Yes"
+    },
+    "microsoft container registry": {
+      "name": "Microsoft Container Registry",
+      "available": "Yes"
+    },
+    "microsoft defender for cloud": {
+      "name": "Microsoft Defender for Cloud",
+      "available": "Yes"
+    },
+    "microsoft defender for cloud : azure defender for sql": {
+      "name": "Microsoft Defender for Cloud : Azure Defender for SQL",
+      "available": "Yes"
+    },
+    "microsoft defender for identity": {
+      "name": "Microsoft Defender for Identity",
+      "available": "Yes"
+    },
+    "microsoft entra domain services": {
+      "name": "Microsoft Entra Domain Services",
+      "available": "Yes"
+    },
+    "microsoft entra id": {
+      "name": "Microsoft Entra ID",
+      "available": "Yes"
+    },
+    "microsoft entra id : free": {
+      "name": "Microsoft Entra ID : Free",
+      "available": "Yes"
+    },
+    "microsoft entra id : free : aad connect cloud provisioning": {
+      "name": "Microsoft Entra ID : Free : AAD Connect Cloud provisioning",
+      "available": "Yes"
+    },
+    "microsoft entra id : free : my apps": {
+      "name": "Microsoft Entra ID : Free : My Apps",
+      "available": "Yes"
+    },
+    "microsoft entra id : premium p1": {
+      "name": "Microsoft Entra ID : Premium P1",
+      "available": "Yes"
+    },
+    "microsoft entra id : premium p2": {
+      "name": "Microsoft Entra ID : Premium P2",
+      "available": "Yes"
+    },
+    "microsoft entra id : premium p2 : lifecycle workflows": {
+      "name": "Microsoft Entra ID : Premium P2 : Lifecycle Workflows",
+      "available": "Yes"
+    },
+    "microsoft graph": {
+      "name": "Microsoft Graph",
+      "available": "Yes"
+    },
+    "network watcher": {
+      "name": "Network Watcher",
+      "available": "Yes"
+    },
+    "network watcher : traffic analytics": {
+      "name": "Network Watcher : Traffic Analytics",
+      "available": "Yes"
+    },
+    "redis cache": {
+      "name": "Redis Cache",
+      "available": "Yes"
+    },
+    "sql server on azure virtual machines": {
+      "name": "SQL Server on Azure Virtual Machines",
+      "available": "Yes"
+    },
+    "storage : azure data lake storage gen2 : premium tier for azure data lake storage": {
+      "name": "Storage : Azure Data Lake Storage Gen2 : Premium tier for Azure Data Lake Storage",
+      "available": "Yes"
+    },
+    "storage : azure premium files": {
+      "name": "Storage : Azure Premium Files",
+      "available": "Yes"
+    },
+    "storage : managed disks : shared disk": {
+      "name": "Storage : Managed Disks : Shared Disk",
+      "available": "Yes"
+    },
+    "storage : premium block blobs": {
+      "name": "Storage : Premium Block Blobs",
+      "available": "Yes"
+    },
+    "traffic manager": {
+      "name": "Traffic Manager",
+      "available": "Yes"
+    },
+    "virtual machine scale sets : virtual machine scale sets [for feature creation] : azure disk encryption": {
+      "name": "Virtual Machine Scale Sets : Virtual Machine Scale Sets [for feature creation] : Azure Disk Encryption",
+      "available": "Yes"
+    },
+    "virtual machine scale sets : virtual machine scale sets [for feature creation] : virtual machine scale sets with flexible orchestration mode": {
+      "name": "Virtual Machine Scale Sets : Virtual Machine Scale Sets [for feature creation] : Virtual Machine Scale Sets with Flexible Orchestration Mode",
+      "available": "Yes"
+    },
+    "virtual machines : azure dedicated host": {
+      "name": "Virtual Machines : Azure Dedicated Host",
+      "available": "Yes"
+    },
+    "virtual machines : serial console": {
+      "name": "Virtual Machines : Serial Console",
+      "available": "Yes"
+    },
+    "virtual machines : virtual machines [for feature creation] : azure disk encryption": {
+      "name": "Virtual Machines : Virtual Machines [for feature creation] : Azure Disk Encryption",
+      "available": "Yes"
+    },
+    "virtual wan": {
+      "name": "Virtual WAN",
+      "available": "Yes"
+    },
+    "virtual wan : expressroute": {
+      "name": "Virtual WAN : ExpressRoute",
+      "available": "Yes"
+    },
+    "virtual wan : point-to-site vpn gateway": {
+      "name": "Virtual WAN : Point-to-site VPN Gateway",
+      "available": "Yes"
+    },
+    "virtual wan : site-to-site vpn gateway": {
+      "name": "Virtual WAN : Site-to-Site VPN Gateway",
+      "available": "Yes"
+    },
+    "automation": {
+      "name": "Automation",
+      "available": "Yes"
+    },
+    "automation : update management": {
+      "name": "Automation : Update Management",
+      "available": "Yes"
+    },
+    "azure ai search : ai enrichment": {
+      "name": "Azure AI Search : AI Enrichment",
+      "available": "Yes"
+    },
+    "azure ai search : semantic search": {
+      "name": "Azure AI Search : Semantic Search",
+      "available": "Yes"
+    },
+    "azure ai services": {
+      "name": "Azure AI Services",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai anomaly detector": {
+      "name": "Azure AI Services : Azure AI Anomaly Detector",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai content moderator": {
+      "name": "Azure AI Services : Azure AI Content Moderator",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai document intelligence": {
+      "name": "Azure AI Services : Azure AI Document Intelligence",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai immersive reader": {
+      "name": "Azure AI Services : Azure AI Immersive Reader",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai language": {
+      "name": "Azure AI Services : Azure AI Language",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai language : conversational language understanding": {
+      "name": "Azure AI Services : Azure AI Language : Conversational Language Understanding",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai language : custom ner and custom text classification (ct)": {
+      "name": "Azure AI Services : Azure AI Language : Custom NER and Custom text classification (CT)",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai language : qna": {
+      "name": "Azure AI Services : Azure AI Language : QnA",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai language understanding": {
+      "name": "Azure AI Services : Azure AI Language Understanding",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai metrics advisor": {
+      "name": "Azure AI Services : Azure AI Metrics Advisor",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai qna maker": {
+      "name": "Azure AI Services : Azure AI QnA Maker",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai speech": {
+      "name": "Azure AI Services : Azure AI Speech",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai translator": {
+      "name": "Azure AI Services : Azure AI Translator",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai vision": {
+      "name": "Azure AI Services : Azure AI Vision",
+      "available": "Yes"
+    },
+    "azure ai services : azure ai vision face api": {
+      "name": "Azure AI Services : Azure AI Vision Face API",
+      "available": "Yes"
+    },
+    "azure ai services : immersive reader": {
+      "name": "Azure AI Services : Immersive Reader",
+      "available": "Yes"
+    },
+    "azure ai services : personalizer": {
+      "name": "Azure AI Services : Personalizer",
+      "available": "Yes"
+    },
+    "azure applied ai services": {
+      "name": "Azure Applied AI Services",
+      "available": "Yes"
+    },
+    "azure applied ai services : azure ai document intelligence": {
+      "name": "Azure Applied AI Services : Azure AI Document Intelligence",
+      "available": "Yes"
+    },
+    "azure applied ai services : azure ai immersive reader": {
+      "name": "Azure Applied AI Services : Azure AI Immersive Reader",
+      "available": "Yes"
+    },
+    "azure applied ai services : azure ai metrics advisor": {
+      "name": "Azure Applied AI Services : Azure AI Metrics Advisor",
+      "available": "Yes"
+    },
+    "azure bastion : bastion standard sku": {
+      "name": "Azure Bastion : Bastion Standard SKU",
+      "available": "Yes"
+    },
+    "azure bot service": {
+      "name": "Azure Bot Service",
+      "available": "Yes"
+    },
+    "azure database migration service": {
+      "name": "Azure Database Migration Service",
+      "available": "Yes"
+    },
+    "azure database for mariadb": {
+      "name": "Azure Database for MariaDB",
+      "available": "Closing Down"
+    },
+    "azure database for mysql : azure database for mysql - single server": {
+      "name": "Azure Database for MySQL : Azure Database for MySQL - Single Server",
+      "available": "Closing Down"
+    },
+    "azure devops": {
+      "name": "Azure DevOps",
+      "available": "Yes"
+    },
+    "azure devtest labs": {
+      "name": "Azure DevTest Labs",
+      "available": "Yes"
+    },
+    "azure front door : azure front door premium": {
+      "name": "Azure Front Door : Azure Front Door Premium",
+      "available": "Yes"
+    },
+    "azure front door : azure front door standard": {
+      "name": "Azure Front Door : Azure Front Door Standard",
+      "available": "Yes"
+    },
+    "azure help": {
+      "name": "Azure Help",
+      "available": "Yes"
+    },
+    "azure open datasets": {
+      "name": "Azure Open Datasets",
+      "available": "Yes"
+    },
+    "azure performance diagnostics": {
+      "name": "Azure Performance Diagnostics",
+      "available": "Yes"
+    },
+    "azure signalr service": {
+      "name": "Azure SignalR Service",
+      "available": "Yes"
+    },
+    "azure synapse analytics": {
+      "name": "Azure Synapse Analytics",
+      "available": "Yes"
+    },
+    "azure synapse analytics : default : workspace": {
+      "name": "Azure Synapse Analytics : Default : Workspace",
+      "available": "Yes"
+    },
+    "azure update manager": {
+      "name": "Azure Update Manager",
+      "available": "Yes"
+    },
+    "azure usage billing": {
+      "name": "Azure Usage Billing",
+      "available": "Yes"
+    },
+    "azure virtual network manager": {
+      "name": "Azure Virtual Network Manager",
+      "available": "Yes"
+    },
+    "azure web pubsub": {
+      "name": "Azure Web PubSub",
+      "available": "Yes"
+    },
+    "event grid : event grid namespace": {
+      "name": "Event Grid : Event Grid Namespace",
+      "available": "Yes"
+    },
+    "functions : consumption plan linux": {
+      "name": "Functions : Consumption Plan Linux",
+      "available": "Yes"
+    },
+    "hdinsight : enterprise security package": {
+      "name": "HDInsight : Enterprise Security Package",
+      "available": "Yes"
+    },
+    "ip services : azure custom ip prefix": {
+      "name": "IP Services : Azure Custom IP Prefix",
+      "available": "Yes"
+    },
+    "machine learning service": {
+      "name": "Machine Learning Service",
+      "available": "Yes"
+    },
+    "microsoft azure managed instance for apache cassandra": {
+      "name": "Microsoft Azure Managed Instance for Apache Cassandra",
+      "available": "Yes"
+    },
+    "microsoft copilot studio": {
+      "name": "Microsoft Copilot Studio",
+      "available": "Yes"
+    },
+    "microsoft entra id : azure active directory [needed for feature creation only] : verifiable credentials": {
+      "name": "Microsoft Entra ID : Azure Active Directory [needed for Feature creation only] : Verifiable credentials",
+      "available": "Yes"
+    },
+    "microsoft graph : microsoft graph : microsoft graph premium apis v1.3": {
+      "name": "Microsoft Graph : Microsoft Graph : Microsoft Graph Premium APIs V1.3",
+      "available": "Yes"
+    },
+    "microsoft sentinel": {
+      "name": "Microsoft Sentinel",
+      "available": "Yes"
+    },
+    "notification hubs": {
+      "name": "Notification Hubs",
+      "available": "Yes"
+    },
+    "storage : azure file sync": {
+      "name": "Storage : Azure File Sync",
+      "available": "Yes"
+    },
+    "universal print": {
+      "name": "Universal Print",
+      "available": "Yes"
+    },
+    "azure monitor : log analytics : network performance monitor": {
+      "name": "Azure Monitor : Log Analytics : Network Performance Monitor",
+      "available": "Yes"
+    }
+  },
+  "vms": {
+    "a - series": {
+      "name": "A - Series",
+      "available": "No",
+      "remarks": "Closing Down"
+    },
+    "av2 - series": {
+      "name": "Av2 - Series",
+      "available": "Yes",
+      "remarks": "This size supports only Gen 1 and not support Gen 2. So better performance to consider Dv5 or DSv5)"
+    },
+    "basv2 series": {
+      "name": "Basv2 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "bpsv2 series": {
+      "name": "Bpsv2 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "bs series": {
+      "name": "Bs Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "bsv2 series": {
+      "name": "Bsv2 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dav4 series": {
+      "name": "Dav4 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dadsv5 series": {
+      "name": "Dadsv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dadsv6 series": {
+      "name": "Dadsv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dalsv6 series": {
+      "name": "Dalsv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "daldsv6 series": {
+      "name": "Daldsv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dasv4 series": {
+      "name": "dasv4 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dasv5 series": {
+      "name": "Dasv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dasv6 series": {
+      "name": "Dasv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dcadsv5 series": {
+      "name": "DCadsv5 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dcasv5 series": {
+      "name": "DCasv5 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dcdsv3 series": {
+      "name": "DCdsv3 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dcsv2 series": {
+      "name": "DCsv2 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dcsv3 series": {
+      "name": "DCsv3 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ddv4 series": {
+      "name": "Ddv4 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "ddsv4 series": {
+      "name": "Ddsv4 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "ddsv5 series": {
+      "name": "Ddsv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "ddsv6 series": {
+      "name": "Ddsv6 series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ddv5 series": {
+      "name": "Ddv5 series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dldsv5 series": {
+      "name": "Dldsv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dldsv6 series": {
+      "name": "Dldsv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dlsv5 series": {
+      "name": "Dlsv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dlsv6 series": {
+      "name": "Dlsv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dpdsv6 series": {
+      "name": "Dpdsv6 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dpdsv5 series": {
+      "name": "Dpdsv5 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dpldsv5 series": {
+      "name": "Dpldsv5 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dpldsv6 series": {
+      "name": "Dpldsv6 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dplsv5 series": {
+      "name": "Dplsv5 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dplsv6 series": {
+      "name": "Dplsv6 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dpsv5 series": {
+      "name": "Dpsv5 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dpsv6 series": {
+      "name": "Dpsv6 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dndsv6 series": {
+      "name": "Dndsv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "d-series": {
+      "name": "D-Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ds- series": {
+      "name": "DS- Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dsv2 series": {
+      "name": "Dsv2 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dsv3 series": {
+      "name": "Dsv3 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dsv4 series": {
+      "name": "Dsv4 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dsv5 series": {
+      "name": "Dsv5 series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dsv6 series": {
+      "name": "Dsv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "dv2 series": {
+      "name": "Dv2 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dv3 series": {
+      "name": "Dv3 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dv4 series": {
+      "name": "Dv4 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "dv5 series": {
+      "name": "Dv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "eav4 series": {
+      "name": "Eav4 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "eadsv5 series": {
+      "name": "Eadsv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "easv4 series": {
+      "name": "Easv4 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "easv5 series": {
+      "name": "Easv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "easv6 series": {
+      "name": "Easv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ebdsv5 series": {
+      "name": "Ebdsv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "ebsv5 series": {
+      "name": "Ebsv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "ecadsv5 series": {
+      "name": "Ecadsv5 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ecasv5 series": {
+      "name": "ECasv5 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "edv4 series": {
+      "name": "Edv4 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "edsv4 series": {
+      "name": "Edsv4 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "edsv5 series": {
+      "name": "Edsv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "edsv6 series": {
+      "name": "Edsv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "edv5 series": {
+      "name": "Edv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "epdsv5 series": {
+      "name": "Epdsv5 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "epdsv6 series": {
+      "name": "Epdsv6 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "epsv5 series": {
+      "name": "Epsv5 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "epsv6 series": {
+      "name": "Epsv6 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "esv3 series": {
+      "name": "Esv3 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "esv4 series": {
+      "name": "Esv4 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "esv5 series": {
+      "name": "Esv5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "esv6 series": {
+      "name": "Esv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ev3 series": {
+      "name": "Ev3 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "ev4 series": {
+      "name": "Ev4 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "ev5 series": {
+      "name": "Ev5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "falsv6 series": {
+      "name": "Falsv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "famsv6 series": {
+      "name": "Famsv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "fasv6 series": {
+      "name": "Fasv6 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "f-series": {
+      "name": "F-Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "fs_series": {
+      "name": "Fs_series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "fsv2 series": {
+      "name": "Fsv2 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "fxmdsv2 series": {
+      "name": "FXmdsv2 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "fxmsv2 series": {
+      "name": "FXmsv2 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "fx series": {
+      "name": "FX Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "g series": {
+      "name": "G Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "gs series": {
+      "name": "GS Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "hb series": {
+      "name": "HB Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "hbv2 series": {
+      "name": "HBv2 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "hbv3 series": {
+      "name": "HBv3 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "hbv4 series": {
+      "name": "HBv4 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "hc series": {
+      "name": "HC Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "h-series": {
+      "name": "H-Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "hx-series": {
+      "name": "HX-Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "lasv4 series": {
+      "name": "Lasv4 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "lasv3 series": {
+      "name": "Lasv3 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "ls-series": {
+      "name": "Ls-Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "lsv2 series": {
+      "name": "Lsv2 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "lsv3 series": {
+      "name": "Lsv3 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "lsv4 series": {
+      "name": "Lsv4 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "mbdsv3 series": {
+      "name": "Mbdsv3 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "mbsv3 series": {
+      "name": "Mbsv3 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "mdsv2 series": {
+      "name": "Mdsv2 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "mdsv3 series": {
+      "name": "Mdsv3 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "m-series": {
+      "name": "M-Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "msv2 series": {
+      "name": "Msv2 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "msv3 series": {
+      "name": "Msv3 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "mv2 series": {
+      "name": "Mv2 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "nc a100 v4 series": {
+      "name": "NC A100 v4 series",
+      "available": "Yes",
+      "remarks": "Only Nagpur (Jio India central )"
+    },
+    "nc_t4_v3 series": {
+      "name": "NC_T4_v3 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ncadsa10_v4 series": {
+      "name": "NCadsA10_v4 series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ncadsh100_v5 series": {
+      "name": "NCadsH100_v5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "nc - series": {
+      "name": "NC - series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ncsv2 series": {
+      "name": "NCsv2 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ncsv3 series": {
+      "name": "NCsv3 Series",
+      "available": "Yes",
+      "remarks": "Closing Down"
+    },
+    "nd_a100_v4 series": {
+      "name": "ND_A100_v4 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ndm_a100_v4 series": {
+      "name": "NDm_A100_v4 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ndsrh100_v5 series": {
+      "name": "NDsrH100_v5 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "nds-series": {
+      "name": "NDs-Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ndv2 series": {
+      "name": "NDv2 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "ngadsv620 series": {
+      "name": "NGadsV620 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "nmads_ma35d series": {
+      "name": "Nmads_MA35D Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "nvads_a10_v5 series": {
+      "name": "Nvads_A10_v5 Series",
+      "available": "Yes",
+      "remarks": ""
+    },
+    "nvads_v710_v5 series": {
+      "name": "Nvads_v710_v5 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "nv - series": {
+      "name": "NV - Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "nv_v3 series": {
+      "name": "NV_v3 Series",
+      "available": "No",
+      "remarks": ""
+    },
+    "nv_v4 series": {
+      "name": "NV_v4 Series",
+      "available": "No",
+      "remarks": ""
+    }
+  },
+  "_metadata": {
+    "source": "Jio Region Availability Matrix",
+    "totalServices": 220,
+    "totalVMs": 124,
+    "lastUpdated": "2026-05-14T13:22:04.860Z"
+  }
+}

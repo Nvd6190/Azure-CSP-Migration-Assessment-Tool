@@ -1,0 +1,6039 @@
+{
+  "subscriptionRules": {
+    "microsoft.aad/domainservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.aadiam/diagnosticsettings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.aadiam/diagnosticsettingscategories": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.aadiam/privatelinkforazuread": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.aadiam/tenants": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.addons/supportproviders": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/aadsupportcases": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/addsservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/agents": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/anonymousapiusers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/configuration": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/logs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/reports": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/servicehealthmetrics": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/services": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.advisor/configurations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.advisor/generaterecommendations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.advisor/metadata": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.advisor/recommendations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.advisor/suppressions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alertprocessingrules": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alerts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alertslist": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alertsmetadata": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alertssummary": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alertssummarylist": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/smartdetectoralertrules": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/smartgroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.analysisservices/servers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.apimanagement/reportfeedback": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.apimanagement/service": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.app/managedenvironments": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.appconfiguration/configurationstores": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.appconfiguration/configurationstores / eventgridfilters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.appplatform/spring": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.appservice/apiapps": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.appservice/appidentities": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.appservice/gateways": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.attestation/attestationproviders": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/classicadministrators": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/dataaliases": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/denyassignments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/elevateaccess": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/findorphanroleassignments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/locks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/permissions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/policyassignments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/policydefinitions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/policysetdefinitions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/privatelinkassociations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/resourcemanagementprivatelinks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/roleassignments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/roleassignmentsusagemetrics": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/roledefinitions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.automation/automationaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.automation/automationaccounts / configurations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.automation/automationaccounts / runbooks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.avs/privateclouds": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.azureactivedirectory/b2cdirectories": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.azureactivedirectory/b2ctenants": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurearcdata/datacontrollers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurearcdata/postgresinstances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurearcdata/sqlmanagedinstances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurearcdata/sqlserverinstances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurearcdata/sqlserverlicenses": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/datacontrollers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/hybriddatamanagers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/postgresinstances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/sqlinstances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/sqlmanagedinstances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/sqlserverinstances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/sqlserverregistrations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.azurestack/cloudmanifestfiles": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurestack/registrations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.azurestackhci/clusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.batch/batchaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.billing/billingaccounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/billingperiods": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/billingpermissions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/billingproperty": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/billingroleassignments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/billingroledefinitions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/departments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/enrollmentaccounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/invoices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/transfers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.bingmaps/mapapis": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.biztalkservices/biztalk": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.blockchain/blockchainmembers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.blockchain/cordamembers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.blockchain/watchers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.blockchaintokens/tokenservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.blueprint/blueprintassignments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.blueprint/blueprints": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.botservice/botservices": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.cache/redis": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.cache/redisenterprise": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/appliedreservations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/calculateexchange": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/calculateprice": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/calculatepurchaseprice": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/catalogs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/commercialreservationorders": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/exchange": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/reservationorders": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/reservations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/resources": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/validatereservationorder": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cdn/cdnwebapplicationfirewallmanagedrulesets": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cdn/cdnwebapplicationfirewallpolicies": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.cdn/edgenodes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cdn/profiles": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.cdn/profiles / endpoints": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.certificateregistration/certificateorders": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.classiccompute/capabilities": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classiccompute/domainnames": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classiccompute/quotas": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classiccompute/resourcetypes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classiccompute/validatesubscriptionmoveavailability": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classiccompute/virtualmachines": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.classicinfrastructuremigrate/classicinfrastructureresources": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/capabilities": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/expressroutecrossconnections": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/expressroutecrossconnections / peerings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/gatewaysupporteddevices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/networksecuritygroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/quotas": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/reservedips": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/virtualnetworks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/disks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/images": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/osimages": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/osplatformimages": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/publicimages": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/quotas": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/storageaccounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/vmimages": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicsubscription/operations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cognitiveservices/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.cognitiveservices/cognitive search": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.commerce/ratecard": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.commerce/usageaggregates": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.communication/communicationservices": {
+      "subscriptionMove": "Yes",
+      "remarks": "Note that resources with attached phone numbers can't be moved to subscriptions in different data locations or subscriptions that don't support phone numbers."
+    },
+    "microsoft.compute/availabilitysets": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.compute/diskaccesses": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/diskencryptionsets": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/disks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.compute/galleries": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/galleries / images": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/galleries / images / versions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/hostgroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/hostgroups / hosts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/images": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.compute/proximityplacementgroups": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.compute/restorepointcollections": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/restorepointcollections / restorepoints": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/sharedvmextensions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/sharedvmimages": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/sharedvmimages / versions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/snapshots": {
+      "subscriptionMove": "Yes",
+      "remarks": "- Full  No - Incremental"
+    },
+    "microsoft.compute/sshpublickeys": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/virtualmachines": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.compute/virtualmachines / extensions": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.compute/virtualmachinescalesets": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.compute/capabilities": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/domainnames": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/quotas": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/resourcetypes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/validatesubscriptionmoveavailability": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.confluent/organizations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/aggregatedcost": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/balances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/budgets": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/charges": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/costtags": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/credits": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/events": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/forecasts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/lots": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/marketplaces": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/pricesheets": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/products": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/reservationdetails": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/reservationrecommendationdetails": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/reservationrecommendations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/reservationsummaries": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/reservationtransactions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/tags": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/tenants": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/terms": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/usagedetails": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerinstance/containergroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerinstance/serviceassociationlinks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries / agentpools": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries / buildtasks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries / replications": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries / tasks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries / webhooks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.containerservice/containerservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerservice/managedclusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerservice/openshiftmanagedclusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.contentmoderator/applications": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cortanaanalytics/accounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/alerts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/billingaccounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/budgets": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/cloudconnectors": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/connectors": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/departments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/dimensions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/enrollmentaccounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/exports": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/externalbillingaccounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/forecast": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/query": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/register": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/reportconfigs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/reports": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/settings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/showbackrules": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/views": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.customerinsights/hubs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.customerlockbox/requests": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.customproviders/associations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.customproviders/resourceproviders": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.databox/jobs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.databoxedge/availableskus": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.databoxedge/databoxedgedevices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.databricks/workspaces": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.databricks/accessconnectors": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datacatalog/catalogs": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.datacatalog/datacatalogs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dataconnect/connectionmanagers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datadog/monitors": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dataexchange/packages": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dataexchange/plans": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datafactory/datafactories": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.datafactory/factories": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.datalake/datalakeaccounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datalakeanalytics/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.datalakestore/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.datamigration/services": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datamigration/services / projects": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datamigration/slots": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datamigration/sqlmigrationservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dataprotection/backupvaults": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.datashare/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.dbformariadb/servers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.dbformysql/flexibleservers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.dbformysql/servers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.dbforpostgresql/flexibleservers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.dbforpostgresql/servergroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dbforpostgresql/servers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.dbforpostgresql/serversv2": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/artifactsources": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/rollouts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/servicetopologies": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/servicetopologies / services": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/servicetopologies / services / serviceunits": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/steps": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/applicationgroups": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/hostpools": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/scalingplans": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/workspaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/appattachpackages": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.devices/elasticpools": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devices/elasticpools / iothubtenants": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devices/iothubs": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.devices/provisioningservices": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.devops/pipelines": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.devops/controllers": {
+      "subscriptionMove": "No",
+      "remarks": "Pending"
+    },
+    "microsoft.devspaces/controllers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.devspaces/aks cluster": {
+      "subscriptionMove": "No",
+      "remarks": "Pending"
+    },
+    "microsoft.devtestlab/labcenters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devtestlab/labs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devtestlab/labs / environments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devtestlab/labs / servicerunners": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devtestlab/labs / virtualmachines": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devtestlab/schedules": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.digitaltwins/digitaltwinsinstances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.documentdb/databaseaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.documentdb/mongoclusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.documentdb/cassandraclusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.domainregistration/domains": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.domainregistration/generatessorequest": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.domainregistration/topleveldomains": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.domainregistration/validatedomainregistrationinformation": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.elastic/monitors": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.enterpriseknowledgegraph/services": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/domains": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/eventsubscriptions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/extensiontopics": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/partnernamespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/partnerregistrations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/partnertopics": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/systemtopics": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/topics": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/topictypes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventhub/clusters": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventhub/namespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.eventhub/sku": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.experimentation/experimentworkspaces": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.extendedlocation/customlocations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.falcon/namespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.features/featureproviders": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.features/features": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.features/providers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.features/subscriptionfeatureregistrations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.genomics/accounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.guestconfiguration/automanagedaccounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.guestconfiguration/automanagedvmconfigurationprofiles": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.guestconfiguration/guestconfigurationassignments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.guestconfiguration/software": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.guestconfiguration/softwareupdateprofile": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.guestconfiguration/softwareupdates": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hanaonazure/hanainstances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hanaonazure/sapmonitors": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hardwaresecuritymodules/dedicatedhsms": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hdinsight/clusters": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.healthcareapis/services": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.hybridcompute/licenses": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.hybridcompute/machines": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.hybridcompute/machines / extensions": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.hybridcompute/privatelinkscopes": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.hybriddata/datamanagers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.hybridnetwork/devices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hybridnetwork/vnfs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hydra/components": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hydra/networkscopes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.importexport/jobs": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/actiongroups": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/activitylogalerts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/alertrules": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/autoscalesettings": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/baseline": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/components": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/datacollectionrules": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/diagnosticsettings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/diagnosticsettingscategories": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/eventcategories": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/eventtypes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/extendeddiagnosticsettings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/guestdiagnosticsettings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/listmigrationdate": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/logdefinitions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/logprofiles": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/logs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/metricalerts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/metricbaselines": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/metricbatch": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/metricdefinitions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/metricnamespaces": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/metrics": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/migratealertrules": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/migratetonewpricingmodel": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/myworkbooks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/notificationgroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/privatelinkscopes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/rollbacktolegacypricingmodel": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/scheduledqueryrules": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/topology": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/transactions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/vminsightsonboardingstatuses": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/webtests": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/webtests / gettestresultfile": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/workbooks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.insights/workbooktemplates": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.iotcentral/apptemplates": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.iotcentral/iotapps": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.iothub/iothub": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.iotspaces/graph": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.keyvault/deletedvaults": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.keyvault/hsmpools": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.keyvault/managedhsms": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.keyvault/vaults": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.kubernetes/connectedclusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.kubernetes/registeredsubscriptions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.kubernetesconfiguration/sourcecontrolconfigurations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.kusto/clusters": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.labservices/labaccounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.labservices/users": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.loadtestservice/loadtests": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.locationbasedservices/accounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.locationservices/accounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.logic/hostingenvironments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.logic/integrationaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.logic/integrationserviceenvironments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.logic/integrationserviceenvironments / managedapis": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.logic/isolatedenvironments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.logic/workflows": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.machinelearning/commitmentplans": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearning/webservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearning/workspaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.machinelearningcompute/operationalizationclusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearningexperimentation/accounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearningexperimentation/teamaccounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearningmodelmanagement/accounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearningservices/workspaces": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.maintenance/configurationassignments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.maintenance/maintenanceconfigurations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.maintenance/updates": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managedidentity/identities": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managedidentity/userassignedidentities": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managednetwork/managednetworks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managednetwork/managednetworks / managednetworkgroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managednetwork/managednetworks / managednetworkpeeringpolicies": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managednetwork/notification": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managedservices/marketplaceregistrationdefinitions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managedservices/registrationassignments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managedservices/registrationdefinitions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.management/getentities": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.management/managementgroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.management/managementgroups / settings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.management/resources": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.management/starttenantbackfill": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.management/tenantbackfillstatus": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.maps/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.maps/accounts / privateatlases": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.marketplace/offers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/offertypes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/privategalleryitems": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/privatestoreclient": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/privatestores": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/products": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/publishers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/register": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplaceapps/classicdevservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplaceordering/agreements": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplaceordering/offertypes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.media/mediaservices": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.media/mediaservices / liveevents": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.media/mediaservices / streamingendpoints": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.microservices4spring/appclusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.migrate/assessmentprojects": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.migrate/migrateprojects": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.migrate/movecollections": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.migrate/projects": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mixedreality/remoterenderingaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/mobilenetworks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/mobilenetworks / datanetworks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/mobilenetworks / simpolicies": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/mobilenetworks / sites": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/mobilenetworks / slices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/packetcorecontrolplanes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/packetcorecontrolplanes / packetcoredataplanes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/packetcorecontrolplanes / packetcoredataplanes / attacheddatanetworks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/sims": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/simgroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/simgroups / sims": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/packetcorecontrolplaneversions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.netapp/netappaccounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.netapp/netappaccounts / capacitypools": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.netapp/netappaccounts / capacitypools / volumes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.netapp/netappaccounts / capacitypools / volumes / mounttargets": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.netapp/netappaccounts / capacitypools / volumes / snapshots": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/applicationgateways": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/applicationgatewaywebapplicationfirewallpolicies": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/applicationsecuritygroups": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/azurefirewalls": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/bastionhosts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/bgpservicecommunities": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/connections": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/ddoscustompolicies": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/ddosprotectionplans": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/dnszones": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/expressroutecircuits": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/expressroutegateways": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/expressrouteserviceproviders": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/firewallpolicies": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/frontdoors": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/ipallocations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/ipgroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/loadbalancers": {
+      "subscriptionMove": "Yes",
+      "remarks": "- Basic SKUNo - Standard SKU"
+    },
+    "microsoft.network/localnetworkgateways": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/natgateways": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networkexperimentprofiles": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networkintentpolicies": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/networkinterfaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/networkprofiles": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networksecuritygroups": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/networkwatchers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networkwatchers / connectionmonitors": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networkwatchers / flowlogs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networkwatchers / pingmeshes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/p2svpngateways": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/privatednszones": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/privatednszones / virtualnetworklinks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/privatednszonesinternal": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/privateendpointredirectmaps": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/privateendpoints": {
+      "subscriptionMove": "Yes",
+      "remarks": "- for supported private-link resourcesNo - for all other private-link resources"
+    },
+    "microsoft.network/privatelinkservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/publicipaddresses": {
+      "subscriptionMove": "Yes",
+      "remarks": "- see Networking move guidance"
+    },
+    "microsoft.network/publicipprefixes": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/routefilters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/routetables": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/securitypartnerproviders": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/serviceendpointpolicies": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/trafficmanagergeographichierarchies": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/trafficmanagerprofiles": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/trafficmanagerprofiles / heatmaps": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/trafficmanagerusermetricskeys": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/virtualhubs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/virtualnetworkgateways": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/virtualnetworks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/virtualnetworktaps": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/virtualrouters": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/virtualwans": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/vpngateways": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/vpnserverconfigurations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/vpnsites": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.notificationhubs/namespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.notificationhubs/namespaces / notificationhubs": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.objectstore/osnamespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.offazure/hypervsites": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.offazure/importsites": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.offazure/mastersites": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.offazure/serversites": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.offazure/vmwaresites": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/clusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/deletedworkspaces": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/linktargets": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/storageinsightconfigs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/workspaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/querypacks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationsmanagement/managementassociations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationsmanagement/managementconfigurations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.operationsmanagement/solutions": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.operationsmanagement/views": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.peering/legacypeerings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peerasns": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peeringlocations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peerings": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.peering/peeringservicecountries": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peeringservicelocations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peeringserviceproviders": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peeringservices": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.policyinsights/policyevents": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.policyinsights/policystates": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.policyinsights/policytrackedresources": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.policyinsights/remediations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.portal/consoles": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.portal/dashboards": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.portal/usersettings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.powerbi/workspacecollections": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.powerbidedicated/capacities": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/gateways": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/openapigatewayofferings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/openapigateways": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/operatorapiconnections": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/operatorapiplans": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/operatorconnections": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/operatorofferings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.projectbabylon/accounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.purview/accounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.providerhub/availableaccounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.providerhub/providerregistrations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.providerhub/rollouts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.quantum/workspaces": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.recoveryservices/replicationeligibilityresults": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.recoveryservices/vaults": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.redhatopenshift/openshiftclusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.relay/namespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/queries": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/resourcechangedetails": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/resourcechanges": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/resources": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/resourceshistory": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/subscriptionsstatus": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcehealth/childresources": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcehealth/emergingissues": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcehealth/events": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcehealth/metadata": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcehealth/notifications": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/deployments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/deploymentscripts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/deploymentscripts / logs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/links": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/providers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/resourcegroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/resources": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/subscriptions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/tags": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/templatespecs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/templatespecs / versions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/tenants": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.saas/applications": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.saas/resources": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.saas/saasresources": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.search/resourcehealthmetadata": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.search/searchservices": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.security/adaptivenetworkhardenings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/advancedthreatprotectionsettings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/alerts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/allowedconnections": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/applicationwhitelistings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/assessmentmetadata": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/assessments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/autodismissalertsrules": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/automations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.security/autoprovisioningsettings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/complianceresults": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/compliances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/datacollectionagents": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/devicesecuritygroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/discoveredsecuritysolutions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/externalsecuritysolutions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/informationprotectionpolicies": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/iotsecuritysolutions": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.security/iotsecuritysolutions / analyticsmodels": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/iotsecuritysolutions / analyticsmodels / aggregatedalerts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/iotsecuritysolutions / analyticsmodels / aggregatedrecommendations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/jitnetworkaccesspolicies": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/policies": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/pricings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/regulatorycompliancestandards": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/regulatorycompliancestandards / regulatorycompliancecontrols": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/regulatorycompliancestandards / regulatorycompliancecontrols / regulatorycomplianceassessments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/securitycontacts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/securitysolutions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/securitysolutionsreferencedata": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/securitystatuses": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/securitystatusessummaries": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/servervulnerabilityassessments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/settings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/subassessments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/tasks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/topologies": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/workspacesettings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/aggregations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/alertrules": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/alertruletemplates": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/automationrules": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/bookmarks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/cases": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/dataconnectors": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/entities": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/entityqueries": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/incidents": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/officeconsents": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/settings": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/threatintelligence": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.serialconsole/consoleservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servermanagement/gateways": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servermanagement/nodes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicebus/namespaces": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicebus/premiummessagingregions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicebus/sku": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/applications": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/clusters": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/containergroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/containergroupsets": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/edgeclusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/managedclusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/networks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/secretstores": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/volumes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/applications": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/containergroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/gateways": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/networks": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/secrets": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/volumes": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.servicenetworking/trafficcontrollers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicenetworking/associations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicenetworking/frontends": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.services/rollouts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.signalrservice/signalr": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.softwareplan/hybridusebenefits": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.solutions/applicationdefinitions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.solutions/applications": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.solutions/jitrequests": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sql/instancepools": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sql/locations": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.sql/managedinstances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sql/managedinstances / databases": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sql/servers": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.sql/servers / databases": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.sql/servers / databases / backuplongtermretentionpolicies": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.sql/servers / elasticpools": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.sql/servers / jobaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.sql/servers / jobagents": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.sql/virtualclusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sqlvirtualmachine/sqlvirtualmachinegroups": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sqlvirtualmachine/sqlvirtualmachines": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.storage/storageaccounts": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.storagecache/caches": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.storagesync/storagesyncservices": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.storagesyncdev/storagesyncservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.storagesyncint/storagesyncservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.storsimple/managers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.streamanalytics/clusters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.streamanalytics/streamingjobs": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.streamanalyticsexplorer/environments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.streamanalyticsexplorer/instances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.subscription/subscriptions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.support/services": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.support/supporttickets": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.synapse/workspaces": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.synapse/workspaces / bigdatapools": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.synapse/workspaces / sqlpools": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.timeseriesinsights/environments": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.timeseriesinsights/environments / eventsources": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.timeseriesinsights/environments / referencedatasets": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.token/stores": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.virtualmachineimages/imagetemplates": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.visualstudio/account": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.visualstudio/account / extension": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.visualstudio/account / project": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmware/arczones": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmware/resourcepools": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmware/vcenters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmware/virtualmachines": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmware/virtualmachinetemplates": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmware/virtualnetworks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmwarecloudsimple/dedicatedcloudnodes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmwarecloudsimple/dedicatedcloudservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmwarecloudsimple/virtualmachines": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vnfmanager/devices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vnfmanager/vnfs": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vsonline/accounts": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vsonline/plans": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vsonline/registeredsubscriptions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/availablestacks": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/billingmeters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/certificates": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/connectiongateways": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/connections": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/customapis": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/deletedsites": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/deploymentlocations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/georegions": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/hostingenvironments": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/kubeenvironments": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/publishingusers": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/recommendations": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/resourcehealthmetadata": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/runtimes": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/serverfarms": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/serverfarms / eventgridfilters": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/sites": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/sites / premieraddons": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/sites / slots": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.web/sourcecontrols": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/staticsites": {
+      "subscriptionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.windowsesu/multipleactivationkeys": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.windowsiot/deviceservices": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.workloadbuilder/workloads": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.workloadmonitor/components": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.workloadmonitor/componentssummary": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.workloadmonitor/monitorinstances": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.workloadmonitor/monitorinstancessummary": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.workloadmonitor/monitors": {
+      "subscriptionMove": "No",
+      "remarks": ""
+    }
+  },
+  "regionRules": {
+    "microsoft.aad/domainservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.aadiam/diagnosticsettings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.aadiam/diagnosticsettingscategories": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.aadiam/privatelinkforazuread": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.aadiam/tenants": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.addons/supportproviders": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/aadsupportcases": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/addsservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/agents": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/anonymousapiusers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/configuration": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/logs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/reports": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/servicehealthmetrics": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.adhybridhealthservice/services": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.advisor/configurations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.advisor/generaterecommendations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.advisor/metadata": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.advisor/recommendations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.advisor/suppressions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alertprocessingrules": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alerts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alertslist": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alertsmetadata": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alertssummary": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/alertssummarylist": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/smartdetectoralertrules": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.alertsmanagement/smartgroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.analysisservices/servers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.apimanagement/reportfeedback": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.apimanagement/service": {
+      "regionMove": "Yes",
+      "remarks": "(using template)  Move API Management across regions."
+    },
+    "microsoft.app/managedenvironments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.appconfiguration/configurationstores": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.appconfiguration/configurationstores / eventgridfilters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.appplatform/spring": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.appservice/apiapps": {
+      "regionMove": "Yes",
+      "remarks": "(using template) Move an App Service app to another region"
+    },
+    "microsoft.appservice/appidentities": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.appservice/gateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.attestation/attestationproviders": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/classicadministrators": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/dataaliases": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/denyassignments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/elevateaccess": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/findorphanroleassignments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/locks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/permissions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/policyassignments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/policydefinitions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/policysetdefinitions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/privatelinkassociations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/resourcemanagementprivatelinks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/roleassignments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/roleassignmentsusagemetrics": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.authorization/roledefinitions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.automation/automationaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.automation/automationaccounts / configurations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.automation/automationaccounts / runbooks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.avs/privateclouds": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azureactivedirectory/b2cdirectories": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azureactivedirectory/b2ctenants": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurearcdata/datacontrollers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurearcdata/postgresinstances": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurearcdata/sqlmanagedinstances": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurearcdata/sqlserverinstances": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurearcdata/sqlserverlicenses": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/datacontrollers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/hybriddatamanagers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/postgresinstances": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/sqlinstances": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/sqlmanagedinstances": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/sqlserverinstances": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azuredata/sqlserverregistrations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurestack/cloudmanifestfiles": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurestack/registrations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.azurestackhci/clusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.batch/batchaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/billingaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/billingperiods": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/billingpermissions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/billingproperty": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/billingroleassignments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/billingroledefinitions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/departments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/enrollmentaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/invoices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.billing/transfers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.bingmaps/mapapis": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.biztalkservices/biztalk": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.blockchain/blockchainmembers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.blockchain/cordamembers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.blockchain/watchers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.blockchaintokens/tokenservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.blueprint/blueprintassignments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.blueprint/blueprints": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.botservice/botservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cache/redis": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cache/redisenterprise": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/appliedreservations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/calculateexchange": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/calculateprice": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/calculatepurchaseprice": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/catalogs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/commercialreservationorders": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/exchange": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/reservationorders": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/reservations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/resources": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.capacity/validatereservationorder": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cdn/cdnwebapplicationfirewallmanagedrulesets": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cdn/cdnwebapplicationfirewallpolicies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cdn/edgenodes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cdn/profiles": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cdn/profiles / endpoints": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.certificateregistration/certificateorders": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classiccompute/capabilities": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classiccompute/domainnames": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classiccompute/quotas": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classiccompute/resourcetypes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classiccompute/validatesubscriptionmoveavailability": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classiccompute/virtualmachines": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicinfrastructuremigrate/classicinfrastructureresources": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/capabilities": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/expressroutecrossconnections": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/expressroutecrossconnections / peerings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/gatewaysupporteddevices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/networksecuritygroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/quotas": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/reservedips": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicnetwork/virtualnetworks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/disks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/images": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/osimages": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/osplatformimages": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/publicimages": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/quotas": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/storageaccounts": {
+      "regionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.classicstorage/vmimages": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.classicsubscription/operations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cognitiveservices/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cognitiveservices/cognitive search": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.commerce/ratecard": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.commerce/usageaggregates": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.communication/communicationservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/availabilitysets": {
+      "regionMove": "Yes",
+      "remarks": "Use Azure Resource Mover to move availability sets."
+    },
+    "microsoft.compute/diskaccesses": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/diskencryptionsets": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/disks": {
+      "regionMove": "Yes",
+      "remarks": "Use Azure Resource Mover to move Azure VMs and related disks."
+    },
+    "microsoft.compute/galleries": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/galleries / images": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/galleries / images / versions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/hostgroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/hostgroups / hosts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/images": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/proximityplacementgroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/restorepointcollections": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/restorepointcollections / restorepoints": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/sharedvmextensions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/sharedvmimages": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/sharedvmimages / versions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/snapshots": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/sshpublickeys": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/virtualmachines": {
+      "regionMove": "Yes",
+      "remarks": "Use Azure Resource Mover to move Azure Virtual Machines."
+    },
+    "microsoft.compute/virtualmachines / extensions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/virtualmachinescalesets": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/capabilities": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/domainnames": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/quotas": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/resourcetypes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.compute/validatesubscriptionmoveavailability": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.confluent/organizations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/aggregatedcost": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/balances": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/budgets": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/charges": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/costtags": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/credits": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/events": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/forecasts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/lots": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/marketplaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/pricesheets": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/products": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/reservationdetails": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/reservationrecommendationdetails": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/reservationrecommendations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/reservationsummaries": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/reservationtransactions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/tags": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/tenants": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/terms": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.consumption/usagedetails": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerinstance/containergroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerinstance/serviceassociationlinks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries / agentpools": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries / buildtasks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries / replications": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries / tasks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerregistry/registries / webhooks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerservice/containerservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerservice/managedclusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.containerservice/openshiftmanagedclusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.contentmoderator/applications": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.cortanaanalytics/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/alerts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/billingaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/budgets": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/cloudconnectors": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/connectors": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/departments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/dimensions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/enrollmentaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/exports": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/externalbillingaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/forecast": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/query": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/register": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/reportconfigs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/reports": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/settings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/showbackrules": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.costmanagement/views": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.customerinsights/hubs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.customerlockbox/requests": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.customproviders/associations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.customproviders/resourceproviders": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.databox/jobs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.databoxedge/availableskus": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.databoxedge/databoxedgedevices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.databricks/workspaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.databricks/accessconnectors": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datacatalog/catalogs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datacatalog/datacatalogs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dataconnect/connectionmanagers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datadog/monitors": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dataexchange/packages": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dataexchange/plans": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datafactory/datafactories": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datafactory/factories": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datalake/datalakeaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datalakeanalytics/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datalakestore/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datamigration/services": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datamigration/services / projects": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datamigration/slots": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datamigration/sqlmigrationservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dataprotection/backupvaults": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.datashare/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dbformariadb/servers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dbformysql/flexibleservers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dbformysql/servers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dbforpostgresql/flexibleservers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dbforpostgresql/servergroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dbforpostgresql/servers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.dbforpostgresql/serversv2": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/artifactsources": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/rollouts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/servicetopologies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/servicetopologies / services": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/servicetopologies / services / serviceunits": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.deploymentmanager/steps": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/applicationgroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/hostpools": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/scalingplans": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/workspaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.desktopvirtualization/appattachpackages": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devices/elasticpools": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devices/elasticpools / iothubtenants": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devices/iothubs": {
+      "regionMove": "Yes",
+      "remarks": ". Learn more."
+    },
+    "microsoft.devices/provisioningservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devops/pipelines": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devops/controllers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devspaces/controllers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devspaces/aks cluster": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devtestlab/labcenters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devtestlab/labs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devtestlab/labs / environments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devtestlab/labs / servicerunners": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devtestlab/labs / virtualmachines": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.devtestlab/schedules": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.digitaltwins/digitaltwinsinstances": {
+      "regionMove": "Yes",
+      "remarks": "by recreating resources in new region. Learn more."
+    },
+    "microsoft.documentdb/databaseaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.documentdb/mongoclusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.documentdb/cassandraclusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.domainregistration/domains": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.domainregistration/generatessorequest": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.domainregistration/topleveldomains": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.domainregistration/validatedomainregistrationinformation": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.elastic/monitors": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.enterpriseknowledgegraph/services": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/domains": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/eventsubscriptions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/extensiontopics": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/partnernamespaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/partnerregistrations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/partnertopics": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/systemtopics": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/topics": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventgrid/topictypes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventhub/clusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.eventhub/namespaces": {
+      "regionMove": "Yes",
+      "remarks": "(with template) Relocate Azure Event Hubs to another region."
+    },
+    "microsoft.eventhub/sku": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.experimentation/experimentworkspaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.extendedlocation/customlocations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.falcon/namespaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.features/featureproviders": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.features/features": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.features/providers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.features/subscriptionfeatureregistrations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.genomics/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.guestconfiguration/automanagedaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.guestconfiguration/automanagedvmconfigurationprofiles": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.guestconfiguration/guestconfigurationassignments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.guestconfiguration/software": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.guestconfiguration/softwareupdateprofile": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.guestconfiguration/softwareupdates": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hanaonazure/hanainstances": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hanaonazure/sapmonitors": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hardwaresecuritymodules/dedicatedhsms": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hdinsight/clusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.healthcareapis/services": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hybridcompute/licenses": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hybridcompute/machines": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hybridcompute/machines / extensions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hybridcompute/privatelinkscopes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hybriddata/datamanagers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hybridnetwork/devices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hybridnetwork/vnfs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hydra/components": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.hydra/networkscopes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.importexport/jobs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/actiongroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/activitylogalerts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/alertrules": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/autoscalesettings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/baseline": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/components": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/datacollectionrules": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/diagnosticsettings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/diagnosticsettingscategories": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/eventcategories": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/eventtypes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/extendeddiagnosticsettings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/guestdiagnosticsettings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/listmigrationdate": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/logdefinitions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/logprofiles": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/logs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/metricalerts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/metricbaselines": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/metricbatch": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/metricdefinitions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/metricnamespaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/metrics": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/migratealertrules": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/migratetonewpricingmodel": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/myworkbooks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/notificationgroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/privatelinkscopes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/rollbacktolegacypricingmodel": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/scheduledqueryrules": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/topology": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/transactions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/vminsightsonboardingstatuses": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/webtests": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/webtests / gettestresultfile": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/workbooks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.insights/workbooktemplates": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.iotcentral/apptemplates": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.iotcentral/iotapps": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.iothub/iothub": {
+      "regionMove": "Yes",
+      "remarks": "(clone hub)  Clone an Azure IoT Hub to another region."
+    },
+    "microsoft.iotspaces/graph": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.keyvault/deletedvaults": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.keyvault/hsmpools": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.keyvault/managedhsms": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.keyvault/vaults": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.kubernetes/connectedclusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.kubernetes/registeredsubscriptions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.kubernetesconfiguration/sourcecontrolconfigurations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.kusto/clusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.labservices/labaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.labservices/users": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.loadtestservice/loadtests": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.locationbasedservices/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.locationservices/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.logic/hostingenvironments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.logic/integrationaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.logic/integrationserviceenvironments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.logic/integrationserviceenvironments / managedapis": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.logic/isolatedenvironments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.logic/workflows": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearning/commitmentplans": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearning/webservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearning/workspaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearningcompute/operationalizationclusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearningexperimentation/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearningexperimentation/teamaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearningmodelmanagement/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.machinelearningservices/workspaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.maintenance/configurationassignments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.maintenance/maintenanceconfigurations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.maintenance/updates": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managedidentity/identities": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managedidentity/userassignedidentities": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managednetwork/managednetworks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managednetwork/managednetworks / managednetworkgroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managednetwork/managednetworks / managednetworkpeeringpolicies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managednetwork/notification": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managedservices/marketplaceregistrationdefinitions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managedservices/registrationassignments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.managedservices/registrationdefinitions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.management/getentities": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.management/managementgroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.management/managementgroups / settings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.management/resources": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.management/starttenantbackfill": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.management/tenantbackfillstatus": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.maps/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.maps/accounts / privateatlases": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/offers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/offertypes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/privategalleryitems": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/privatestoreclient": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/privatestores": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/products": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/publishers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplace/register": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplaceapps/classicdevservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplaceordering/agreements": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.marketplaceordering/offertypes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.media/mediaservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.media/mediaservices / liveevents": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.media/mediaservices / streamingendpoints": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.microservices4spring/appclusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.migrate/assessmentprojects": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.migrate/migrateprojects": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.migrate/movecollections": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.migrate/projects": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mixedreality/remoterenderingaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/mobilenetworks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/mobilenetworks / datanetworks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/mobilenetworks / simpolicies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/mobilenetworks / sites": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/mobilenetworks / slices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/packetcorecontrolplanes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/packetcorecontrolplanes / packetcoredataplanes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/packetcorecontrolplanes / packetcoredataplanes / attacheddatanetworks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/sims": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/simgroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/simgroups / sims": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.mobilenetwork/packetcorecontrolplaneversions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.netapp/netappaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.netapp/netappaccounts / capacitypools": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.netapp/netappaccounts / capacitypools / volumes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.netapp/netappaccounts / capacitypools / volumes / mounttargets": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.netapp/netappaccounts / capacitypools / volumes / snapshots": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/applicationgateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/applicationgatewaywebapplicationfirewallpolicies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/applicationsecuritygroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/azurefirewalls": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/bastionhosts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/bgpservicecommunities": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/connections": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/ddoscustompolicies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/ddosprotectionplans": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/dnszones": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/expressroutecircuits": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/expressroutegateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/expressrouteserviceproviders": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/firewallpolicies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/frontdoors": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/ipallocations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/ipgroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/loadbalancers": {
+      "regionMove": "Yes",
+      "remarks": "Use Azure Resource Mover to move internal and external load balancers."
+    },
+    "microsoft.network/localnetworkgateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/natgateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networkexperimentprofiles": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networkintentpolicies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networkinterfaces": {
+      "regionMove": "Yes",
+      "remarks": "Use Azure Resource Mover to move NICs."
+    },
+    "microsoft.network/networkprofiles": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networksecuritygroups": {
+      "regionMove": "Yes",
+      "remarks": "Use Azure Resource Mover to move network security groups."
+    },
+    "microsoft.network/networkwatchers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networkwatchers / connectionmonitors": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networkwatchers / flowlogs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/networkwatchers / pingmeshes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/p2svpngateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/privatednszones": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/privatednszones / virtualnetworklinks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/privatednszonesinternal": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/privateendpointredirectmaps": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/privateendpoints": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/privatelinkservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/publicipaddresses": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/publicipprefixes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/routefilters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/routetables": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/securitypartnerproviders": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/serviceendpointpolicies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/trafficmanagergeographichierarchies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/trafficmanagerprofiles": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/trafficmanagerprofiles / heatmaps": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/trafficmanagerusermetricskeys": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/virtualhubs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/virtualnetworkgateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/virtualnetworks": {
+      "regionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.network/virtualnetworktaps": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/virtualrouters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/virtualwans": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/vpngateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/vpnserverconfigurations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.network/vpnsites": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.notificationhubs/namespaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.notificationhubs/namespaces / notificationhubs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.objectstore/osnamespaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.offazure/hypervsites": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.offazure/importsites": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.offazure/mastersites": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.offazure/serversites": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.offazure/vmwaresites": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/clusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/deletedworkspaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/linktargets": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/storageinsightconfigs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/workspaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationalinsights/querypacks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationsmanagement/managementassociations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationsmanagement/managementconfigurations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationsmanagement/solutions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.operationsmanagement/views": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/legacypeerings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peerasns": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peeringlocations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peerings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peeringservicecountries": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peeringservicelocations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peeringserviceproviders": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.peering/peeringservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.policyinsights/policyevents": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.policyinsights/policystates": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.policyinsights/policytrackedresources": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.policyinsights/remediations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.portal/consoles": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.portal/dashboards": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.portal/usersettings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.powerbi/workspacecollections": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.powerbidedicated/capacities": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/gateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/openapigatewayofferings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/openapigateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/operatorapiconnections": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/operatorapiplans": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/operatorconnections": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.programmableconnectivity/operatorofferings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.projectbabylon/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.purview/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.providerhub/availableaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.providerhub/providerregistrations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.providerhub/rollouts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.quantum/workspaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.recoveryservices/replicationeligibilityresults": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.recoveryservices/vaults": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.redhatopenshift/openshiftclusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.relay/namespaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/queries": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/resourcechangedetails": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/resourcechanges": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/resources": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/resourceshistory": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcegraph/subscriptionsstatus": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcehealth/childresources": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcehealth/emergingissues": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcehealth/events": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcehealth/metadata": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resourcehealth/notifications": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/deployments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/deploymentscripts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/deploymentscripts / logs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/links": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/providers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/resourcegroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/resources": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/subscriptions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/tags": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/templatespecs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/templatespecs / versions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.resources/tenants": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.saas/applications": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.saas/resources": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.saas/saasresources": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.search/resourcehealthmetadata": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.search/searchservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/adaptivenetworkhardenings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/advancedthreatprotectionsettings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/alerts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/allowedconnections": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/applicationwhitelistings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/assessmentmetadata": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/assessments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/autodismissalertsrules": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/automations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/autoprovisioningsettings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/complianceresults": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/compliances": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/datacollectionagents": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/devicesecuritygroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/discoveredsecuritysolutions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/externalsecuritysolutions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/informationprotectionpolicies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/iotsecuritysolutions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/iotsecuritysolutions / analyticsmodels": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/iotsecuritysolutions / analyticsmodels / aggregatedalerts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/iotsecuritysolutions / analyticsmodels / aggregatedrecommendations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/jitnetworkaccesspolicies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/policies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/pricings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/regulatorycompliancestandards": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/regulatorycompliancestandards / regulatorycompliancecontrols": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/regulatorycompliancestandards / regulatorycompliancecontrols / regulatorycomplianceassessments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/securitycontacts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/securitysolutions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/securitysolutionsreferencedata": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/securitystatuses": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/securitystatusessummaries": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/servervulnerabilityassessments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/settings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/subassessments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/tasks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/topologies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.security/workspacesettings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/aggregations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/alertrules": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/alertruletemplates": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/automationrules": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/bookmarks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/cases": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/dataconnectors": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/entities": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/entityqueries": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/incidents": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/officeconsents": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/settings": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.securityinsights/threatintelligence": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.serialconsole/consoleservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servermanagement/gateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servermanagement/nodes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicebus/namespaces": {
+      "regionMove": "Yes",
+      "remarks": "(with template) Move an Azure Service Bus namespace to another region."
+    },
+    "microsoft.servicebus/premiummessagingregions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicebus/sku": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/applications": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/clusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/containergroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/containergroupsets": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/edgeclusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/managedclusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/networks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/secretstores": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabric/volumes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/applications": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/containergroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/gateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/networks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/secrets": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicefabricmesh/volumes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicenetworking/trafficcontrollers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicenetworking/associations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.servicenetworking/frontends": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.services/rollouts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.signalrservice/signalr": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.softwareplan/hybridusebenefits": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.solutions/applicationdefinitions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.solutions/applications": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.solutions/jitrequests": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sql/instancepools": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sql/locations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sql/managedinstances": {
+      "regionMove": "Yes",
+      "remarks": "Learn more about moving managed instances across regions."
+    },
+    "microsoft.sql/managedinstances / databases": {
+      "regionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.sql/servers": {
+      "regionMove": "Yes",
+      "remarks": ""
+    },
+    "microsoft.sql/servers / databases": {
+      "regionMove": "Yes",
+      "remarks": "Learn more about moving databases across regions. Learn more about using Azure Resource Mover to move Azure SQL databases."
+    },
+    "microsoft.sql/servers / databases / backuplongtermretentionpolicies": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sql/servers / elasticpools": {
+      "regionMove": "Yes",
+      "remarks": "Learn more about moving elastic pools across regions. Learn more about using Azure Resource Mover to move Azure SQL elastic pools."
+    },
+    "microsoft.sql/servers / jobaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sql/servers / jobagents": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sql/virtualclusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sqlvirtualmachine/sqlvirtualmachinegroups": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.sqlvirtualmachine/sqlvirtualmachines": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.storage/storageaccounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.storagecache/caches": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.storagesync/storagesyncservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.storagesyncdev/storagesyncservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.storagesyncint/storagesyncservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.storsimple/managers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.streamanalytics/clusters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.streamanalytics/streamingjobs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.streamanalyticsexplorer/environments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.streamanalyticsexplorer/instances": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.subscription/subscriptions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.support/services": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.support/supporttickets": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.synapse/workspaces": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.synapse/workspaces / bigdatapools": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.synapse/workspaces / sqlpools": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.timeseriesinsights/environments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.timeseriesinsights/environments / eventsources": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.timeseriesinsights/environments / referencedatasets": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.token/stores": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.virtualmachineimages/imagetemplates": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.visualstudio/account": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.visualstudio/account / extension": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.visualstudio/account / project": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmware/arczones": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmware/resourcepools": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmware/vcenters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmware/virtualmachines": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmware/virtualmachinetemplates": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmware/virtualnetworks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmwarecloudsimple/dedicatedcloudnodes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmwarecloudsimple/dedicatedcloudservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vmwarecloudsimple/virtualmachines": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vnfmanager/devices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vnfmanager/vnfs": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vsonline/accounts": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vsonline/plans": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.vsonline/registeredsubscriptions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/availablestacks": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/billingmeters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/certificates": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/connectiongateways": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/connections": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/customapis": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/deletedsites": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/deploymentlocations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/georegions": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/hostingenvironments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/kubeenvironments": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/publishingusers": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/recommendations": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/resourcehealthmetadata": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/runtimes": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/serverfarms": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/serverfarms / eventgridfilters": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/sites": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/sites / premieraddons": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/sites / slots": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/sourcecontrols": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.web/staticsites": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.windowsesu/multipleactivationkeys": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.windowsiot/deviceservices": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.workloadbuilder/workloads": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.workloadmonitor/components": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.workloadmonitor/componentssummary": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.workloadmonitor/monitorinstances": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.workloadmonitor/monitorinstancessummary": {
+      "regionMove": "No",
+      "remarks": ""
+    },
+    "microsoft.workloadmonitor/monitors": {
+      "regionMove": "No",
+      "remarks": ""
+    }
+  },
+  "cachedAt": "2026-05-15T07:05:52.550Z"
+}
