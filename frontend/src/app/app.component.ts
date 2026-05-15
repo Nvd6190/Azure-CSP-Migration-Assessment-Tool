@@ -17,6 +17,7 @@ import { MigrationService } from './services/migration.service';
         <img class="azure-logo" src="assets/azure-logo.png" alt="Azure" width="32" height="32"/>
         <div class="topbar-title-group">
           <span class="topbar-title">Azure CSP Migration Assessment Tool</span>
+          <span class="version-badge">v{{ appVersion }}</span>
         </div>
         <span class="mode-badge" *ngIf="selectedMode">
           {{ selectedMode === 'jio' ? 'Jio Region' : selectedMode === 'region' ? 'Region Move' : 'Subscription Move' }}
@@ -95,6 +96,15 @@ import { MigrationService } from './services/migration.service';
       font-size: 16px;
       font-weight: 600;
       letter-spacing: 0.3px;
+    }
+    .version-badge {
+      background: rgba(255,255,255,0.15);
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      opacity: 0.85;
     }
     .mode-badge {
       background: rgba(255,255,255,0.2);
@@ -175,6 +185,7 @@ import { MigrationService } from './services/migration.service';
   `]
 })
 export class AppComponent implements OnInit {
+  appVersion = '1.1.0';
   selectedMode: AssessmentMode | null = null;
   assessmentResult: AssessmentResponse | null = null;
   rulesInfo: any = null;

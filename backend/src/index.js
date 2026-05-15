@@ -4,6 +4,8 @@ const path = require('path');
 const fs = require('fs');
 const uploadRouter = require('./routes/upload');
 
+const { version } = require('../package.json');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -19,7 +21,7 @@ app.use(express.json());
 app.use('/api', uploadRouter);
 
 app.get('/api/health', (_req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+  res.json({ status: 'ok', version, timestamp: new Date().toISOString() });
 });
 
 app.listen(PORT, () => {

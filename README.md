@@ -35,6 +35,7 @@ AzureCSP-Migration/
 │   ├── Dockerfile
 │   └── package.json
 ├── docker-compose.yml
+├── CHANGELOG.md
 └── README.md
 ```
 
@@ -90,6 +91,7 @@ Open http://localhost:4200
 - **Rich Excel reports** — 7 sheets: Assessment Data, Summary Dashboard, Pivot by Provider, Pivot by Resource Group, Pivot by Location, Status Sheet, Action Sheet
 - **Jio data management** — Upload updated Jio availability Excel to refresh service/VM data (220+ services, 124 VM series)
 - **Manual refresh** — Re-fetch rules from Microsoft Learn via the toolbar button
+- **Version display** — App version shown in the topbar and backend health endpoint
 
 ## API Endpoints
 
@@ -103,7 +105,7 @@ Open http://localhost:4200
 | GET | `/api/rules` | Return current rules, counts, source, and metadata |
 | POST | `/api/rules/refresh` | Force re-fetch live rules from Microsoft Learn |
 | POST | `/api/jio/refresh` | Upload a new Jio availability Excel to update data |
-| GET | `/api/health` | Health check |
+| GET | `/api/health` | Health check (includes app version) |
 
 ## Live Rules
 
@@ -155,5 +157,5 @@ See [CHANGELOG.md](CHANGELOG.md) for a detailed list of changes in each version.
 
 | Version | Date | Highlights |
 |---------|------|------------|
-| 1.1.0 | 2026-05-15 | Periodic 6-hour rule refresh, Live/Static badge fix, README overhaul |
+| 1.1.0 | 2026-05-15 | Periodic 6-hour rule refresh, Live/Static badge fix, version display in app, README overhaul |
 | 1.0.0 | 2026-05-15 | Initial release — 3 assessment modes, live rules, rich Excel reports |

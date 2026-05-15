@@ -11,6 +11,8 @@ Format: [Semantic Versioning](https://semver.org/) — MAJOR.MINOR.PATCH
 ### Added
 - Periodic rules re-fetch every 6 hours via `setInterval`
 - Live/Static badge fix — correctly shows "Live" when rules are fetched from Microsoft Learn
+- Version badge displayed in the application topbar (`v1.1.0`)
+- Backend health endpoint now returns app version
 
 ### Fixed
 - Header badge was showing "Static" even when live rules were loaded (source string mismatch: expected `dynamic+static`, actual `microsoft-learn+static`)
