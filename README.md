@@ -56,7 +56,7 @@ Open http://localhost:4200
 ## How It Works
 
 1. **Upload** — Drag & drop your Azure resource export Excel file
-2. **Assess** — Backend reads the TYPE column and matches each resource against 120+ rules from Microsoft's official [resource move support page](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources)
+2. **Assess** — Backend reads the RESOURCE TYPE column and matches each resource against 120+ rules from Microsoft's official [resource move support page](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources)
 3. **View** — Results grid shows colour-coded badges: ✅ Yes / ❌ No / ⚠️ Review
 4. **Download** — Get the enriched Excel with three new columns: SUBSCRIPTION MOVE SUPPORTED, NORMALIZED TYPE, REMARKS
 
@@ -98,12 +98,12 @@ Your uploaded file should have at least these columns (case-insensitive):
 | Column | Example |
 |--------|---------|
 | NAME | my-vm-01 |
-| TYPE | Virtual machine |
+| RESOURCE TYPE | Virtual machine |
 | RESOURCE GROUP | rg-production |
 | LOCATION | eastus |
 | SUBSCRIPTION | My Subscription |
 
-The TYPE column accepts both Azure portal display names (e.g. "Virtual machine") and ARM resource type IDs (e.g. "microsoft.compute/virtualmachines").
+The RESOURCE TYPE column accepts both Azure portal display names (e.g. "Virtual machine") and ARM resource type IDs (e.g. "microsoft.compute/virtualmachines").
 
 ## Build Phases
 
