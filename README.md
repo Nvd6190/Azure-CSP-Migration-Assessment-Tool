@@ -4,6 +4,17 @@
 
 Upload an Azure resource export (.xlsx) and instantly assess migration readiness across three modes — **Subscription Move**, **Region Move**, and **Jio Region Availability** — powered by 790+ live rules fetched from Microsoft's official documentation.
 
+## Screenshots
+
+### Landing Page — Choose Assessment Mode
+![Landing Page](screenshots/landing-page.png)
+
+### Upload Page — Drag & Drop File Upload
+![Upload Page](screenshots/upload-page.png)
+
+### Results Page — Assessment Results with Summary Cards
+![Results Page](screenshots/results-page.png)
+
 ## Architecture
 
 ```
