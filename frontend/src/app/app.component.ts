@@ -16,7 +16,7 @@ import { MigrationService } from './services/migration.service';
       <div class="topbar-left">
         <img class="azure-logo" src="assets/azure-logo.png" alt="Azure" width="32" height="32"/>
         <div class="topbar-title-group">
-          <span class="topbar-title">Azure CSP Migration Assessment Tool</span>
+          <span class="topbar-title">Resource Migration Assessment Tool</span>
           <span class="version-badge">v{{ appVersion }}</span>
         </div>
         <span class="mode-badge" *ngIf="selectedMode">

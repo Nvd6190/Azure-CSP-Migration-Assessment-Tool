@@ -38,5 +38,5 @@ app.get('/api/health', (_req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Azure CSP Migration API running on port ${PORT}`);
+  console.log(`Resource Migration Assessment API running on port ${PORT}`);
 });

@@ -13,7 +13,7 @@ export type AssessmentMode = 'subscription' | 'region' | 'jio';
         <div class="landing-logo">
           <img src="assets/azure-logo.png" alt="Microsoft Azure" width="72" height="72"/>
         </div>
-        <h1>Azure CSP Migration Assessment Tool</h1>
+        <h1>Resource Migration Assessment Tool</h1>
         <p>Choose the type of migration assessment to perform on your Azure resources</p>
       </div>
 
