@@ -1,7 +1,7 @@
 {
-  "name": "azure-csp-migration-backend",
+  "name": "resource-migration-assessment-backend",
   "version": "1.3.0",
-  "description": "Azure CSP Migration Assessment API",
+  "description": "Resource Migration Assessment API",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
