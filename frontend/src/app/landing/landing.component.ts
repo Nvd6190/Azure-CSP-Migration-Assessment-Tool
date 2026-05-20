@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-export type AssessmentMode = 'subscription' | 'region' | 'jio';
+export type AssessmentMode = 'subscription' | 'region' | 'jio' | 'aws' | 'gcp';
 
 @Component({
   selector: 'app-landing',
@@ -72,6 +72,47 @@ export type AssessmentMode = 'subscription' | 'region' | 'jio';
           </div>
           <button class="card-btn jio-btn">Start Assessment &rarr;</button>
         </div>
+
+        <!-- AWS to Azure Card -->
+        <div class="choice-card" (click)="select('aws')">
+          <div class="card-icon aws-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="1.5">
+              <path d="M2 17l4-4 4 4"/>
+              <path d="M6 13v8"/>
+              <path d="M14 17l4-4 4 4"/>
+              <path d="M18 13v8"/>
+              <path d="M4 9c0-3.87 3.13-7 7-7s7 3.13 7 7"/>
+              <path d="M8 9h8"/>
+            </svg>
+          </div>
+          <h2>AWS to Azure Migration</h2>
+          <p class="card-desc">Map your AWS resources to Azure equivalents — with migration guidance and similarity assessment</p>
+          <div class="card-details">
+            <span class="detail-item">&#10003; AWS → Azure service mapping</span>
+            <span class="detail-item">&#10003; Similarity scoring</span>
+            <span class="detail-item">&#10003; Migration notes & guidance</span>
+          </div>
+          <button class="card-btn aws-btn">Start Assessment &rarr;</button>
+        </div>
+
+        <!-- GCP to Azure Card -->
+        <div class="choice-card" (click)="select('gcp')">
+          <div class="card-icon gcp-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4285F4" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h2>GCP to Azure Migration</h2>
+          <p class="card-desc">Map your Google Cloud resources to Azure equivalents — with migration guidance and similarity assessment</p>
+          <div class="card-details">
+            <span class="detail-item">&#10003; GCP → Azure service mapping</span>
+            <span class="detail-item">&#10003; Similarity scoring</span>
+            <span class="detail-item">&#10003; Migration notes & guidance</span>
+          </div>
+          <button class="card-btn gcp-btn">Start Assessment &rarr;</button>
+        </div>
       </div>
     </div>
   `,
@@ -103,9 +144,9 @@ export type AssessmentMode = 'subscription' | 'region' | 'jio';
     }
     .cards-row {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 24px;
-      max-width: 1000px;
+      max-width: 1200px;
       width: 100%;
     }
     .choice-card {
@@ -138,6 +179,8 @@ export type AssessmentMode = 'subscription' | 'region' | 'jio';
     .subscription-icon { background: #e8f4fd; }
     .region-icon { background: #e8f8e8; }
     .jio-icon { background: #fde8e8; }
+    .aws-icon { background: #fff4e5; }
+    .gcp-icon { background: #e8f0fe; }
     .choice-card h2 {
       font-size: 20px;
       font-weight: 700;
@@ -179,6 +222,10 @@ export type AssessmentMode = 'subscription' | 'region' | 'jio';
     .region-btn:hover { background: #0b6a0b; }
     .jio-btn { background: #e60012; }
     .jio-btn:hover { background: #c4000f; }
+    .aws-btn { background: #FF9900; }
+    .aws-btn:hover { background: #e68a00; }
+    .gcp-btn { background: #4285F4; }
+    .gcp-btn:hover { background: #1A73E8; }
 
     @media (max-width: 700px) {
       .cards-row { grid-template-columns: 1fr; }

@@ -16,6 +16,10 @@ export interface AssessmentSummary {
   no: number;
   review: number;
   conditional?: number;
+  directEquivalent?: number;
+  similar?: number;
+  partial?: number;
+  noMapping?: number;
 }
 
 export interface AssessmentResponse {

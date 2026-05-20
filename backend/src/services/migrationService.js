@@ -2,6 +2,47 @@ const fs = require('fs');
 const path = require('path');
 const { fetchAllRules } = require('./rulesFetcher');
 
+// Isolated assessor modules — errors in one won't crash others
+let awsAssessor = null;
+try {
+  awsAssessor = require('./assessors/awsAssessor');
+} catch (err) {
+  console.error('[WARN] AWS Assessor module failed to load:', err.message);
+  console.error('[WARN] AWS-to-Azure assessment will be unavailable. Other modes still work.');
+}
+
+let gcpAssessor = null;
+try {
+  gcpAssessor = require('./assessors/gcpAssessor');
+} catch (err) {
+  console.error('[WARN] GCP Assessor module failed to load:', err.message);
+  console.error('[WARN] GCP-to-Azure assessment will be unavailable. Other modes still work.');
+}
+
+let subscriptionAssessor = null;
+try {
+  subscriptionAssessor = require('./assessors/subscriptionAssessor');
+} catch (err) {
+  console.error('[WARN] Subscription Assessor module failed to load:', err.message);
+  console.error('[WARN] Subscription move assessment will be unavailable. Other modes still work.');
+}
+
+let regionAssessor = null;
+try {
+  regionAssessor = require('./assessors/regionAssessor');
+} catch (err) {
+  console.error('[WARN] Region Assessor module failed to load:', err.message);
+  console.error('[WARN] Region move assessment will be unavailable. Other modes still work.');
+}
+
+let jioAssessor = null;
+try {
+  jioAssessor = require('./assessors/jioAssessor');
+} catch (err) {
+  console.error('[WARN] Jio Assessor module failed to load:', err.message);
+  console.error('[WARN] Jio region assessment will be unavailable. Other modes still work.');
+}
+
 class MigrationService {
   constructor() {
     const matrixPath = path.join(__dirname, '..', 'data', 'azureMoveMatrix.json');
@@ -26,15 +67,6 @@ class MigrationService {
     this.refreshRules().catch(err => {
       console.warn('Dynamic CSV fetch failed on startup, using static rules:', err.message);
     });
-
-    // Periodic re-fetch every 6 hours (in milliseconds)
-    const REFRESH_INTERVAL = 6 * 60 * 60 * 1000;
-    this._refreshTimer = setInterval(() => {
-      console.log('Periodic rules refresh triggered...');
-      this.refreshRules().catch(err => {
-        console.warn('Periodic rules refresh failed:', err.message);
-      });
-    }, REFRESH_INTERVAL);
   }
 
   /**
@@ -57,6 +89,10 @@ class MigrationService {
     this.rulesSource = source + '+static';
     this.lastRefreshed = new Date().toISOString();
     this.metadata.lastUpdated = this.lastRefreshed;
+
+    // Initialize isolated assessor modules with latest rules
+    if (subscriptionAssessor) subscriptionAssessor.init(this.rules);
+    if (regionAssessor) regionAssessor.init(this.regionRules);
 
     console.log(`Rules refreshed: ${this.csvRuleCount} subscription + ${this.regionCsvRuleCount} region from ${source}, ${Object.keys(this.staticRules).length} static overrides = ${this._ruleKeys.length} total subscription rules`);
     return {
@@ -86,10 +122,19 @@ class MigrationService {
    *                  "VMs" (columns: VM Series, Availability Status, Remarks)
    */
   refreshJioFromExcel(excelPath) {
+    if (jioAssessor) {
+      const result = jioAssessor.refreshFromExcel(excelPath);
+      // Keep orchestrator in-memory copy in sync
+      this.jioServices = jioAssessor.jioServices;
+      this.jioVMs = jioAssessor.jioVMs;
+      this.jioMetadata = jioAssessor.jioMetadata;
+      this.__armToJioName = null;
+      return result;
+    }
+    // Fallback: inline logic if module failed to load
     const XLSX = require('xlsx');
     const workbook = XLSX.readFile(excelPath);
 
-    // Parse Services sheet
     const servicesSheetName = workbook.SheetNames.find(s => /services/i.test(s) && !/availability/i.test(s));
     if (!servicesSheetName) throw new Error('Could not find a "Services" sheet in the uploaded file.');
     const servicesRows = XLSX.utils.sheet_to_json(workbook.Sheets[servicesSheetName]);
@@ -105,7 +150,6 @@ class MigrationService {
       services[name.toLowerCase()] = { name, available: status };
     }
 
-    // Parse VMs sheet
     const vmsSheetName = workbook.SheetNames.find(s => /vm/i.test(s));
     const vms = {};
     if (vmsSheetName) {
@@ -124,7 +168,7 @@ class MigrationService {
     }
 
     if (Object.keys(services).length === 0) {
-      throw new Error('No services found in the uploaded Excel. Check sheet format (expected columns: "Services Names", "Availability Status").');
+      throw new Error('No services found in the uploaded Excel.');
     }
 
     const jioData = {
@@ -138,18 +182,11 @@ class MigrationService {
       }
     };
 
-    // Write updated JSON
     fs.writeFileSync(this._jioJsonPath, JSON.stringify(jioData, null, 2), 'utf-8');
-
-    // Also save the Excel as backup
     const backupPath = path.join(path.dirname(this._jioJsonPath), 'jio-availability.xlsx');
     fs.copyFileSync(excelPath, backupPath);
-
-    // Reload in memory
     this._loadJioData();
-    // Clear cached ARM→Jio map so it rebuilds
     this.__armToJioName = null;
-
     console.log(`Jio data refreshed: ${jioData._metadata.totalServices} services, ${jioData._metadata.totalVMs} VMs`);
     return jioData._metadata;
   }
@@ -1136,23 +1173,20 @@ class MigrationService {
    * Assess region move support for an array of resources.
    */
   assessRegionResources(resources) {
+    if (regionAssessor) {
+      return regionAssessor.assessResources(resources, this.normalizeType.bind(this));
+    }
+    // Fallback
     if (!resources || resources.length === 0) return [];
-
     const firstRow = resources[0];
     const typeCol = this._detectTypeColumn(firstRow);
-    const nameCol = this._detectNameColumn(firstRow);
-
     if (!typeCol) {
-      const availableCols = Object.keys(firstRow).join(', ');
-      throw new Error(`Could not find a "Resource Type" column in your file. Available columns: [${availableCols}]. Expected one of: TYPE, Resource Type, ResourceType, or a column containing the word "type".`);
+      throw new Error(`Could not find a "Resource Type" column in your file.`);
     }
-    console.log(`[Region Assessment] Detected resource type column: "${typeCol}"`);
-
     return resources.map(resource => {
       const clean = this._stripAssessmentColumns(resource);
       const typeValue = typeCol ? (resource[typeCol] || '') : '';
       const assessment = this.assessRegionType(typeValue);
-
       return {
         ...clean,
         'REGION MOVE SUPPORTED': assessment.regionMove,
@@ -1263,24 +1297,24 @@ class MigrationService {
   }
 
   assessResources(resources) {
+    if (subscriptionAssessor) {
+      return subscriptionAssessor.assessResources(resources, this.normalizeType.bind(this));
+    }
+    // Fallback: inline logic if module failed to load
     if (!resources || resources.length === 0) return [];
 
-    // Detect columns from the first row
     const firstRow = resources[0];
     const typeCol = this._detectTypeColumn(firstRow);
-    const nameCol = this._detectNameColumn(firstRow);
 
     if (!typeCol) {
       const availableCols = Object.keys(firstRow).join(', ');
-      throw new Error(`Could not find a "Resource Type" column in your file. Available columns: [${availableCols}]. Expected one of: TYPE, Resource Type, ResourceType, or a column containing the word "type".`);
+      throw new Error(`Could not find a "Resource Type" column in your file. Available columns: [${availableCols}].`);
     }
-    console.log(`[Subscription Assessment] Detected resource type column: "${typeCol}" | All columns: [${Object.keys(firstRow).join(', ')}]`);
 
     return resources.map(resource => {
       const clean = this._stripAssessmentColumns(resource);
       const typeValue = typeCol ? (resource[typeCol] || '') : '';
       const assessment = this.assessType(typeValue);
-
       return {
         ...clean,
         'SUBSCRIPTION MOVE SUPPORTED': assessment.subscriptionMove,
@@ -1520,50 +1554,25 @@ class MigrationService {
    * Assess Jio availability for an array of resources.
    */
   assessJioResources(resources) {
+    if (jioAssessor) {
+      return jioAssessor.assessResources(resources, this.normalizeType.bind(this));
+    }
+    // Fallback
     if (!resources || resources.length === 0) return [];
-
     const firstRow = resources[0];
     const typeCol = this._detectTypeColumn(firstRow);
-    const locationCol = this._detectLocationColumn(firstRow);
-
     if (!typeCol) {
-      const availableCols = Object.keys(firstRow).join(', ');
-      throw new Error(`Could not find a "Resource Type" column in your file. Available columns: [${availableCols}]. Expected one of: TYPE, Resource Type, ResourceType, or a column containing the word "type".`);
+      throw new Error(`Could not find a "Resource Type" column in your file.`);
     }
-    console.log(`[Jio Assessment] Detected resource type column: "${typeCol}"`);
-
-    // India region identifiers (Azure internal names)
-    const indiaRegions = new Set([
-      'centralindia', 'southindia', 'westindia', 'jioindiawest', 'jioindiacentral',
-      'central india', 'south india', 'west india', 'jio india west', 'jio india central'
-    ]);
-
     return resources.map(resource => {
       const clean = this._stripAssessmentColumns(resource);
       const typeValue = typeCol ? (resource[typeCol] || '') : '';
       const assessment = this.assessJioType(typeValue);
-
-      // Detect if resource is in an India region
-      let regionWarning = '';
-      if (locationCol) {
-        const location = (resource[locationCol] || '').toString().toLowerCase().trim();
-        if (location && !indiaRegions.has(location)) {
-          regionWarning = `Current region: ${resource[locationCol]}. Only India regions are supported for Jio migration.`;
-        }
-      }
-
-      const combinedRemarks = [assessment.remarks, regionWarning].filter(Boolean).join(' | ');
-
       return {
         ...clean,
         'JIO REGION AVAILABLE': assessment.jioAvailable,
-        'JIO SERVICE NAME': assessment.jioServiceName,
-        'CURRENT REGION': locationCol ? (resource[locationCol] || '') : '',
-        'INDIA REGION': locationCol
-          ? (indiaRegions.has((resource[locationCol] || '').toString().toLowerCase().trim()) ? 'Yes' : 'No')
-          : '',
         'NORMALIZED TYPE': assessment.normalizedType,
-        'REMARKS': combinedRemarks
+        'REMARKS': assessment.remarks
       };
     });
   }
@@ -1598,6 +1607,58 @@ class MigrationService {
     const review = assessedResources.filter(r => r['JIO REGION AVAILABLE'] === 'Review').length;
 
     return { total, yes, no, review };
+  }
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // AWS TO AZURE MIGRATION COMPARISON
+  // ══════════════════════════════════════════════════════════════════════════
+  // Delegated to isolated assessors/awsAssessor.js module.
+  // If the AWS module has errors, other assessment modes still work.
+
+  assessAwsType(rawType, skuOrSize) {
+    if (!awsAssessor) throw new Error('AWS Assessor module is not available. Check server logs for load errors.');
+    return awsAssessor.assessType(rawType, skuOrSize);
+  }
+
+  assessAwsResources(resources) {
+    if (!awsAssessor) throw new Error('AWS Assessor module is not available. Check server logs for load errors.');
+    return awsAssessor.assessResources(resources);
+  }
+
+  getAwsSummary(assessedResources) {
+    if (!awsAssessor) throw new Error('AWS Assessor module is not available. Check server logs for load errors.');
+    return awsAssessor.getSummary(assessedResources);
+  }
+
+  reloadAwsMapping() {
+    if (!awsAssessor) throw new Error('AWS Assessor module is not available.');
+    awsAssessor.reloadMapping();
+  }
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // GCP TO AZURE MIGRATION COMPARISON
+  // ══════════════════════════════════════════════════════════════════════════
+  // Delegated to isolated assessors/gcpAssessor.js module.
+  // If the GCP module has errors, other assessment modes still work.
+
+  assessGcpType(rawType, skuOrSize) {
+    if (!gcpAssessor) throw new Error('GCP Assessor module is not available. Check server logs for load errors.');
+    return gcpAssessor.assessType(rawType, skuOrSize);
+  }
+
+  assessGcpResources(resources) {
+    if (!gcpAssessor) throw new Error('GCP Assessor module is not available. Check server logs for load errors.');
+    return gcpAssessor.assessResources(resources);
+  }
+
+  getGcpSummary(assessedResources) {
+    if (!gcpAssessor) throw new Error('GCP Assessor module is not available. Check server logs for load errors.');
+    return gcpAssessor.getSummary(assessedResources);
+  }
+
+  reloadGcpMapping() {
+    if (!gcpAssessor) throw new Error('GCP Assessor module is not available.');
+    gcpAssessor.reloadMapping();
   }
 }
 

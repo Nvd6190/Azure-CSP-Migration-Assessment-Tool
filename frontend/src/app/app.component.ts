@@ -5,6 +5,7 @@ import { LandingComponent, AssessmentMode } from './landing/landing.component';
 import { AssessmentResponse } from './models/assessment.model';
 import { CommonModule } from '@angular/common';
 import { MigrationService } from './services/migration.service';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -17,18 +18,18 @@ import { MigrationService } from './services/migration.service';
         <img class="azure-logo" src="assets/azure-logo.png" alt="Azure" width="32" height="32"/>
         <div class="topbar-title-group">
           <span class="topbar-title">Resource Migration Assessment Tool</span>
-          <span class="version-badge">v{{ appVersion }}</span>
         </div>
         <span class="mode-badge" *ngIf="selectedMode">
-          {{ selectedMode === 'jio' ? 'Jio Region' : selectedMode === 'region' ? 'Region Move' : 'Subscription Move' }}
+          {{ selectedMode === 'aws' ? 'AWS → Azure' : selectedMode === 'gcp' ? 'GCP → Azure' : selectedMode === 'jio' ? 'Jio Region' : selectedMode === 'region' ? 'Region Move' : 'Subscription Move' }}
         </span>
       </div>
       <div class="topbar-right">
+        <span class="version-badge">v{{ appVersion }}</span>
         <span class="rules-info" *ngIf="rulesInfo">
-          <span class="rules-badge" [class.dynamic]="rulesInfo.source && rulesInfo.source !== 'static'">
+          <span class="rules-badge" [class.dynamic]="rulesInfo.source === 'dynamic+static'">
             {{ rulesInfo.totalRules }} rules
           </span>
-          <span class="rules-source">{{ rulesInfo.source && rulesInfo.source !== 'static' ? 'Live' : 'Static' }}</span>
+          <span class="rules-source">{{ rulesInfo.source === 'dynamic+static' ? 'Live' : 'Static' }}</span>
         </span>
         <button class="refresh-btn" (click)="refreshRules()" [disabled]="refreshing" title="Refresh rules from Microsoft">
           <span [class.spinning]="refreshing">&#x21bb;</span>
@@ -56,6 +57,7 @@ import { MigrationService } from './services/migration.service';
         <app-upload
           [mode]="selectedMode"
           (assessmentComplete)="onAssessmentComplete($event)"
+          (fileSelected)="onFileSelected($event)"
           (reset)="onReset()">
         </app-upload>
 
@@ -97,21 +99,20 @@ import { MigrationService } from './services/migration.service';
       font-weight: 600;
       letter-spacing: 0.3px;
     }
-    .version-badge {
-      background: rgba(255,255,255,0.15);
-      padding: 2px 8px;
-      border-radius: 10px;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      opacity: 0.85;
-    }
     .mode-badge {
       background: rgba(255,255,255,0.2);
       padding: 3px 10px;
       border-radius: 12px;
       font-size: 12px;
       font-weight: 600;
+    }
+    .version-badge {
+      background: rgba(255,255,255,0.15);
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 500;
+      opacity: 0.9;
     }
     .rules-info {
       display: flex;
@@ -185,12 +186,13 @@ import { MigrationService } from './services/migration.service';
   `]
 })
 export class AppComponent implements OnInit {
-  appVersion = '1.1.0';
+  appVersion = environment.version;
   selectedMode: AssessmentMode | null = null;
   assessmentResult: AssessmentResponse | null = null;
   rulesInfo: any = null;
   refreshing = false;
   jioUpdating = false;
+  lastFile: File | null = null;
 
   constructor(private migrationService: MigrationService) {}
 
@@ -211,6 +213,34 @@ export class AppComponent implements OnInit {
     this.migrationService.refreshRules().subscribe({
       next: (data) => {
         this.rulesInfo = { ...this.rulesInfo, ...data };
+        // Re-assess with fresh rules if we have a file and results showing
+        if (this.lastFile && this.selectedMode && this.assessmentResult) {
+          this._reassess();
+        } else {
+          this.refreshing = false;
+        }
+      },
+      error: () => {
+        this.refreshing = false;
+      }
+    });
+  }
+
+  private _reassess(): void {
+    if (!this.lastFile || !this.selectedMode) { this.refreshing = false; return; }
+    const request$ = this.selectedMode === 'aws'
+      ? this.migrationService.assessAwsFile(this.lastFile)
+      : this.selectedMode === 'gcp'
+        ? this.migrationService.assessGcpFile(this.lastFile)
+        : this.selectedMode === 'jio'
+          ? this.migrationService.assessJioFile(this.lastFile)
+          : this.selectedMode === 'region'
+            ? this.migrationService.assessRegionFile(this.lastFile)
+            : this.migrationService.assessFile(this.lastFile);
+
+    request$.subscribe({
+      next: (result) => {
+        this.assessmentResult = result;
         this.refreshing = false;
       },
       error: () => {
@@ -227,6 +257,10 @@ export class AppComponent implements OnInit {
     this.assessmentResult = result;
   }
 
+  onFileSelected(file: File): void {
+    this.lastFile = file;
+  }
+
   onReset(): void {
     this.assessmentResult = null;
   }
@@ -234,6 +268,7 @@ export class AppComponent implements OnInit {
   goHome(): void {
     this.selectedMode = null;
     this.assessmentResult = null;
+    this.lastFile = null;
   }
 
   onJioFileSelected(event: Event): void {

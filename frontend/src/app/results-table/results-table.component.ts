@@ -15,22 +15,42 @@ import { MigrationService } from '../services/migration.service';
         <div class="card-value">{{ data.summary.total }}</div>
         <div class="card-label">Total Resources</div>
       </div>
-      <div class="summary-card yes" [class.active]="activeFilter === 'Yes'" (click)="setFilter('Yes')">
-        <div class="card-value">{{ data.summary.yes }}</div>
-        <div class="card-label">{{ mode === 'jio' ? 'Available' : 'Can Move' }}</div>
-      </div>
-      <div class="summary-card no" [class.active]="activeFilter === 'No'" (click)="setFilter('No')">
-        <div class="card-value">{{ data.summary.no }}</div>
-        <div class="card-label">{{ mode === 'jio' ? 'Not Available' : 'Cannot Move' }}</div>
-      </div>
-      <div class="summary-card review" [class.active]="activeFilter === 'Review'" (click)="setFilter('Review')">
-        <div class="card-value">{{ data.summary.review }}</div>
-        <div class="card-label">Needs Review</div>
-      </div>
-      <div class="summary-card conditional" *ngIf="mode === 'subscription'" [class.active]="activeFilter === 'Conditional'" (click)="setFilter('Conditional')">
-        <div class="card-value">{{ data.summary.conditional || 0 }}</div>
-        <div class="card-label">Conditional</div>
-      </div>
+      <ng-container *ngIf="mode !== 'aws' && mode !== 'gcp'">
+        <div class="summary-card yes" [class.active]="activeFilter === 'Yes'" (click)="setFilter('Yes')">
+          <div class="card-value">{{ data.summary.yes }}</div>
+          <div class="card-label">{{ mode === 'jio' ? 'Available' : 'Can Move' }}</div>
+        </div>
+        <div class="summary-card no" [class.active]="activeFilter === 'No'" (click)="setFilter('No')">
+          <div class="card-value">{{ data.summary.no }}</div>
+          <div class="card-label">{{ mode === 'jio' ? 'Not Available' : 'Cannot Move' }}</div>
+        </div>
+        <div class="summary-card review" [class.active]="activeFilter === 'Review'" (click)="setFilter('Review')">
+          <div class="card-value">{{ data.summary.review }}</div>
+          <div class="card-label">Needs Review</div>
+        </div>
+        <div class="summary-card conditional" *ngIf="mode === 'subscription'" [class.active]="activeFilter === 'Conditional'" (click)="setFilter('Conditional')">
+          <div class="card-value">{{ data.summary.conditional || 0 }}</div>
+          <div class="card-label">Conditional</div>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="mode === 'aws' || mode === 'gcp'">
+        <div class="summary-card yes" [class.active]="activeFilter === 'Direct Equivalent'" (click)="setFilter('Direct Equivalent')">
+          <div class="card-value">{{ data.summary.directEquivalent || data.summary.yes }}</div>
+          <div class="card-label">Direct Equivalent</div>
+        </div>
+        <div class="summary-card review" [class.active]="activeFilter === 'Similar'" (click)="setFilter('Similar')">
+          <div class="card-value">{{ data.summary.similar || 0 }}</div>
+          <div class="card-label">Similar</div>
+        </div>
+        <div class="summary-card conditional" [class.active]="activeFilter === 'Partial'" (click)="setFilter('Partial')">
+          <div class="card-value">{{ data.summary.partial || 0 }}</div>
+          <div class="card-label">Partial</div>
+        </div>
+        <div class="summary-card no" [class.active]="activeFilter === 'No Direct Mapping'" (click)="setFilter('No Direct Mapping')">
+          <div class="card-value">{{ data.summary.noMapping || data.summary.no }}</div>
+          <div class="card-label">No Mapping</div>
+        </div>
+      </ng-container>
     </div>
 
     <!-- Controls -->
@@ -61,7 +81,7 @@ import { MigrationService } from '../services/migration.service';
     <div class="table-container">
       <table>
         <thead>
-          <tr>
+          <tr *ngIf="mode !== 'aws' && mode !== 'gcp'">
             <th class="col-num">#</th>
             <th class="col-name">Name</th>
             <th class="col-type">Resource Type</th>
@@ -71,28 +91,54 @@ import { MigrationService } from '../services/migration.service';
             <th class="col-status">{{ mode === 'jio' ? 'Jio Availability' : mode === 'region' ? 'Region Move' : 'Subscription Move' }}</th>
             <th class="col-remarks">Remarks</th>
           </tr>
+          <tr *ngIf="mode === 'aws' || mode === 'gcp'">
+            <th class="col-num">#</th>
+            <th class="col-name">Name</th>
+            <th class="col-type">{{ mode === 'gcp' ? 'GCP Service' : 'AWS Service' }}</th>
+            <th class="col-aws">Azure Equivalent</th>
+            <th class="col-category">Category</th>
+            <th class="col-status">Similarity</th>
+            <th class="col-remarks">Migration Notes</th>
+          </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let resource of filteredResources; let i = index">
-            <td class="col-num">{{ i + 1 }}</td>
-            <td class="col-name" [title]="getField(resource, 'NAME')">{{ getField(resource, 'NAME') }}</td>
-            <td class="col-type" [title]="getResourceType(resource)">{{ getResourceType(resource) }}</td>
-            <td class="col-rg" [title]="getField(resource, 'RESOURCE GROUP')">{{ getField(resource, 'RESOURCE GROUP') }}</td>
-            <td class="col-location">{{ getField(resource, 'LOCATION') }}</td>
-            <td *ngIf="mode === 'jio'" class="col-india">
-              <span class="badge" [ngClass]="resource['INDIA REGION'] === 'Yes' ? 'badge-yes' : resource['INDIA REGION'] === 'No' ? 'badge-no' : 'badge-review'">
-                {{ resource['INDIA REGION'] === 'Yes' ? '✓' : resource['INDIA REGION'] === 'No' ? '✗' : '—' }} {{ resource['INDIA REGION'] || '—' }}
-              </span>
-            </td>
-            <td class="col-status">
-              <span class="badge" [ngClass]="getBadgeClass(resource)">
-                {{ getBadgeIcon(resource) }} {{ getStatusField(resource) }}
-              </span>
-            </td>
-            <td class="col-remarks" [title]="resource['REMARKS'] || ''">{{ resource['REMARKS'] }}</td>
+          <tr *ngFor="let resource of filteredResources; let i = index" [class]="mode !== 'aws' && mode !== 'gcp' ? '' : ''">
+            <ng-container *ngIf="mode !== 'aws' && mode !== 'gcp'">
+              <td class="col-num">{{ i + 1 }}</td>
+              <td class="col-name" [title]="getField(resource, 'NAME')">{{ getField(resource, 'NAME') }}</td>
+              <td class="col-type" [title]="getResourceType(resource)">{{ getResourceType(resource) }}</td>
+              <td class="col-rg" [title]="getField(resource, 'RESOURCE GROUP')">{{ getField(resource, 'RESOURCE GROUP') }}</td>
+              <td class="col-location">{{ getField(resource, 'LOCATION') }}</td>
+              <td *ngIf="mode === 'jio'" class="col-india">
+                <span class="badge" [ngClass]="resource['INDIA REGION'] === 'Yes' ? 'badge-yes' : resource['INDIA REGION'] === 'No' ? 'badge-no' : 'badge-review'">
+                  {{ resource['INDIA REGION'] === 'Yes' ? '✓' : resource['INDIA REGION'] === 'No' ? '✗' : '—' }} {{ resource['INDIA REGION'] || '—' }}
+                </span>
+              </td>
+              <td class="col-status">
+                <span class="badge" [ngClass]="getBadgeClass(resource)">
+                  {{ getBadgeIcon(resource) }} {{ getStatusField(resource) }}
+                </span>
+              </td>
+              <td class="col-remarks" [title]="resource['REMARKS'] || ''">{{ resource['REMARKS'] }}</td>
+            </ng-container>
+            <ng-container *ngIf="mode === 'aws' || mode === 'gcp'">
+              <td class="col-num">{{ i + 1 }}</td>
+              <td class="col-name" [title]="getField(resource, 'NAME')">{{ getField(resource, 'NAME') }}</td>
+              <td class="col-type" [title]="resource['GCP SERVICE'] || resource['AWS SERVICE'] || getResourceType(resource)">{{ resource['GCP SERVICE'] || resource['AWS SERVICE'] || getResourceType(resource) }}</td>
+              <td class="col-aws" [title]="resource['AZURE EQUIVALENT'] || ''">{{ resource['AZURE EQUIVALENT'] }}</td>
+              <td class="col-category">
+                <span class="category-badge">{{ resource['CATEGORY'] }}</span>
+              </td>
+              <td class="col-status">
+                <span class="badge" [ngClass]="getBadgeClass(resource)">
+                  {{ getBadgeIcon(resource) }} {{ getStatusField(resource) }}
+                </span>
+              </td>
+              <td class="col-remarks" [title]="resource['MIGRATION NOTES'] || ''">{{ resource['MIGRATION NOTES'] }}</td>
+            </ng-container>
           </tr>
           <tr *ngIf="filteredResources.length === 0">
-            <td [attr.colspan]="mode === 'jio' ? 8 : 7" class="empty-row">No resources match your filter.</td>
+            <td [attr.colspan]="mode === 'aws' || mode === 'gcp' ? 7 : mode === 'jio' ? 8 : 7" class="empty-row">No resources match your filter.</td>
           </tr>
         </tbody>
       </table>
@@ -215,8 +261,21 @@ import { MigrationService } from '../services/migration.service';
     .col-type { min-width: 160px; }
     .col-rg { min-width: 140px; }
     .col-location { min-width: 100px; }
+    .col-aws { min-width: 180px; }
+    .col-category { min-width: 100px; }
+
     .col-status { min-width: 150px; }
     .col-remarks { min-width: 200px; max-width: 300px; }
+
+    .category-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 600;
+      background: #e8f4fd;
+      color: #0078d4;
+    }
 
     .badge {
       display: inline-flex;
@@ -250,7 +309,7 @@ import { MigrationService } from '../services/migration.service';
 })
 export class ResultsTableComponent implements OnChanges {
   @Input() data!: AssessmentResponse;
-  @Input() mode: 'subscription' | 'region' | 'jio' = 'subscription';
+  @Input() mode: 'subscription' | 'region' | 'jio' | 'aws' | 'gcp' = 'subscription';
 
   searchQuery = '';
   activeFilter = 'all';
@@ -336,6 +395,9 @@ export class ResultsTableComponent implements OnChanges {
   }
 
   getStatusField(resource: AssessmentResource): string {
+    if (this.mode === 'aws' || this.mode === 'gcp') {
+      return (resource as any)['SIMILARITY'] || '';
+    }
     if (this.mode === 'jio') {
       return (resource as any)['JIO REGION AVAILABLE'] || '';
     }
@@ -347,17 +409,19 @@ export class ResultsTableComponent implements OnChanges {
 
   getBadgeClass(resource: AssessmentResource): string {
     const status = this.getStatusField(resource);
-    if (status === 'Yes') return 'badge-yes';
-    if (status === 'No') return 'badge-no';
-    if (status === 'Conditional') return 'badge-conditional';
+    if (status === 'Yes' || status === 'Direct Equivalent') return 'badge-yes';
+    if (status === 'No' || status === 'No Direct Mapping') return 'badge-no';
+    if (status === 'Conditional' || status === 'Similar') return 'badge-conditional';
+    if (status === 'Partial') return 'badge-review';
     return 'badge-review';
   }
 
   getBadgeIcon(resource: AssessmentResource): string {
     const status = this.getStatusField(resource);
-    if (status === 'Yes') return '\u2705';
-    if (status === 'No') return '\u274C';
-    if (status === 'Conditional') return '\u2139\uFE0F';
+    if (status === 'Yes' || status === 'Direct Equivalent') return '\u2705';
+    if (status === 'No' || status === 'No Direct Mapping') return '\u274C';
+    if (status === 'Conditional' || status === 'Similar') return '\u2139\uFE0F';
+    if (status === 'Partial') return '\u26A0\uFE0F';
     return '\u26A0\uFE0F';
   }
 

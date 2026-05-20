@@ -2,11 +2,10 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { AssessmentResponse } from '../models/assessment.model';
-import { environment } from '../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class MigrationService {
-  private apiUrl = environment.apiUrl;
+  private apiUrl = '/api';
 
   constructor(private http: HttpClient) {}
 
@@ -26,6 +25,18 @@ export class MigrationService {
     const formData = new FormData();
     formData.append('file', file);
     return this.http.post<AssessmentResponse>(`${this.apiUrl}/assess-jio-json`, formData);
+  }
+
+  assessAwsFile(file: File): Observable<AssessmentResponse> {
+    const formData = new FormData();
+    formData.append('file', file);
+    return this.http.post<AssessmentResponse>(`${this.apiUrl}/assess-aws-json`, formData);
+  }
+
+  assessGcpFile(file: File): Observable<AssessmentResponse> {
+    const formData = new FormData();
+    formData.append('file', file);
+    return this.http.post<AssessmentResponse>(`${this.apiUrl}/assess-gcp-json`, formData);
   }
 
   getDownloadUrl(downloadId: string): string {

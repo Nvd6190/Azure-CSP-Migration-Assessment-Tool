@@ -261,6 +261,100 @@ router.post('/rules/refresh', async (_req, res) => {
 });
 
 /**
+ * POST /api/assess-aws-json - Upload Excel, get JSON results for Azure-to-AWS comparison
+ */
+router.post('/assess-aws-json', upload.single('file'), async (req, res) => {
+  try {
+    if (!req.file) {
+      return res.status(400).json({ error: 'No file uploaded. Please upload an .xlsx or .csv file.' });
+    }
+
+    const workbook = XLSX.readFile(req.file.path);
+    const sheetName = workbook.SheetNames[0];
+    const worksheet = workbook.Sheets[sheetName];
+    const rawData = XLSX.utils.sheet_to_json(worksheet);
+
+    if (rawData.length === 0) {
+      cleanupFile(req.file.path);
+      return res.status(400).json({ error: 'The uploaded file contains no data rows.' });
+    }
+
+    const assessed = migrationService.assessAwsResources(rawData);
+    const summary = migrationService.getAwsSummary(assessed);
+
+    const downloadId = `aws-assessment-${Date.now()}`;
+    const outputPath = path.join(__dirname, '..', '..', 'uploads', `${downloadId}.xlsx`);
+
+    await buildReport({
+      assessed,
+      summary,
+      mode: 'aws',
+      sheetName: 'AWS to Azure Comparison',
+      outputPath,
+    });
+
+    setTimeout(() => cleanupFile(outputPath), 10 * 60 * 1000);
+    cleanupFile(req.file.path);
+
+    res.json({ summary, resources: assessed, downloadId });
+  } catch (err) {
+    if (req.file) cleanupFile(req.file.path);
+    console.error('AWS assessment error:', err);
+    if (err.message && err.message.includes('Could not find')) {
+      return res.status(400).json({ error: err.message });
+    }
+    res.status(500).json({ error: 'Failed to process the file. Ensure it is a valid Excel file with resource data.' });
+  }
+});
+
+/**
+ * POST /api/assess-gcp-json - Upload Excel, get JSON results for GCP-to-Azure comparison
+ */
+router.post('/assess-gcp-json', upload.single('file'), async (req, res) => {
+  try {
+    if (!req.file) {
+      return res.status(400).json({ error: 'No file uploaded. Please upload an .xlsx or .csv file.' });
+    }
+
+    const workbook = XLSX.readFile(req.file.path);
+    const sheetName = workbook.SheetNames[0];
+    const worksheet = workbook.Sheets[sheetName];
+    const rawData = XLSX.utils.sheet_to_json(worksheet);
+
+    if (rawData.length === 0) {
+      cleanupFile(req.file.path);
+      return res.status(400).json({ error: 'The uploaded file contains no data rows.' });
+    }
+
+    const assessed = migrationService.assessGcpResources(rawData);
+    const summary = migrationService.getGcpSummary(assessed);
+
+    const downloadId = `gcp-assessment-${Date.now()}`;
+    const outputPath = path.join(__dirname, '..', '..', 'uploads', `${downloadId}.xlsx`);
+
+    await buildReport({
+      assessed,
+      summary,
+      mode: 'gcp',
+      sheetName: 'GCP to Azure Comparison',
+      outputPath,
+    });
+
+    setTimeout(() => cleanupFile(outputPath), 10 * 60 * 1000);
+    cleanupFile(req.file.path);
+
+    res.json({ summary, resources: assessed, downloadId });
+  } catch (err) {
+    if (req.file) cleanupFile(req.file.path);
+    console.error('GCP assessment error:', err);
+    if (err.message && err.message.includes('Could not find')) {
+      return res.status(400).json({ error: err.message });
+    }
+    res.status(500).json({ error: 'Failed to process the file. Ensure it is a valid Excel file with resource data.' });
+  }
+});
+
+/**
  * POST /api/jio/refresh - Upload a new Jio availability Excel to refresh the Jio data
  */
 router.post('/jio/refresh', upload.single('file'), (req, res) => {

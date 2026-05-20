@@ -1,8 +1,8 @@
 # Azure CSP Migration Assessment Tool
 
-![Version](https://img.shields.io/badge/version-1.1.0-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen) ![Angular](https://img.shields.io/badge/angular-17-red)
+![Version](https://img.shields.io/badge/version-1.3.0-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen) ![Angular](https://img.shields.io/badge/angular-17-red)
 
-Upload an Azure resource export (.xlsx) and instantly assess migration readiness across three modes — **Subscription Move**, **Region Move**, and **Jio Region Availability** — powered by 790+ live rules fetched from Microsoft's official documentation.
+Upload an Azure resource export (.xlsx) and instantly assess migration readiness across five modes — **Subscription Move**, **Region Move**, **Jio Region Availability**, **AWS to Azure Migration**, and **GCP to Azure Migration** — powered by 790+ live rules fetched from Microsoft's official documentation.
 
 ## Screenshots
 
@@ -27,8 +27,12 @@ AzureCSP-Migration/
 │   │   │   ├── migrationService.js           # Core assessment engine + type normalizer
 │   │   │   ├── rulesFetcher.js               # Live rules fetcher from Microsoft Learn
 │   │   │   └── excelReportBuilder.js         # Rich multi-sheet Excel report generator
+│   │   │   └── utils/typeDetector.js          # Column detection for AWS/GCP imports
+│   │   │   └── assessors/gcpAssessor.js       # GCP-to-Azure assessor module
 │   │   └── data/
 │   │       ├── azureMoveMatrix.json          # Static rules (manually verified, 300+ entries)
+│   │       ├── aws-azure-mapping.json        # AWS service → Azure equivalent mappings
+│   │       ├── gcp-azure-mapping.json        # GCP service → Azure equivalent mappings (50+ services)
 │   │       ├── jio-availability.json         # Jio India West service & VM availability
 │   │       └── learn-rules-cache.json        # Disk cache of fetched Microsoft Learn rules
 │   ├── Dockerfile
@@ -36,7 +40,7 @@ AzureCSP-Migration/
 ├── frontend/                                 # Angular 17 standalone app
 │   ├── src/app/
 │   │   ├── app.component.ts                  # Shell with Azure topbar + rules info
-│   │   ├── landing/landing.component.ts      # Mode selection (3 assessment cards)
+│   │   ├── landing/landing.component.ts      # Mode selection (5 assessment cards)
 │   │   ├── upload/upload.component.ts        # Drag & drop file upload
 │   │   ├── results-table/results-table.component.ts  # Interactive results grid
 │   │   ├── models/assessment.model.ts        # TypeScript interfaces
@@ -82,24 +86,28 @@ Open http://localhost:4200
 | **Subscription Move** | `SUBSCRIPTION MOVE SUPPORTED` | Can the resource be moved to a different subscription (CSP migration)? Values: Yes / No / Conditional / Review |
 | **Region Move** | `REGION MOVE SUPPORTED` | Can the resource be moved to a different Azure region? Values: Yes / No / Review |
 | **Jio Region Availability** | `JIO REGION AVAILABLE` | Is the service/VM available in Jio India West? Detects if resource is in an India region. Values: Yes / No / Review |
+| **AWS to Azure Migration** | `AZURE EQUIVALENT` | Maps AWS resources to Azure equivalents with migration guidance. Categories: Direct Equivalent / Similar / Partial / No Mapping |
+| **GCP to Azure Migration** | `AZURE EQUIVALENT` | Maps GCP resources to Azure equivalents with migration guidance. Categories: Direct Equivalent / Similar / Partial / No Mapping |
 
 ## How It Works
 
-1. **Choose Mode** — Select Subscription Move, Region Move, or Jio Region Availability
-2. **Upload** — Drag & drop your Azure resource export Excel file
-3. **Assess** — Backend reads the RESOURCE TYPE column and matches each resource against 790+ rules from Microsoft's official [resource move support page](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources)
-4. **View** — Results grid shows colour-coded badges: ✅ Yes / ❌ No / ⚠️ Conditional / 🔍 Review
+1. **Choose Mode** — Select Subscription Move, Region Move, Jio Region Availability, AWS to Azure Migration, or GCP to Azure Migration
+2. **Upload** — Drag & drop your Azure/AWS/GCP resource export Excel file
+3. **Assess** — Backend reads the RESOURCE TYPE column and matches each resource against 790+ rules from Microsoft's official [resource move support page](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources) (or AWS/GCP mapping data for cross-cloud modes)
+4. **View** — Results grid shows colour-coded badges: ✅ Yes / ❌ No / ⚠️ Conditional / 🔍 Review (or category badges for AWS mode)
 5. **Download** — Get a rich multi-sheet Excel report with assessment data, summary dashboard, pivot tables, and action items
 
 ## Features
 
-- **Three assessment modes** — Subscription move, region move, Jio region availability
+- **Five assessment modes** — Subscription move, region move, Jio region availability, AWS to Azure migration, GCP to Azure migration
 - **790+ live rules** — Auto-fetched from Microsoft Learn on startup and refreshed every 6 hours
+- **AWS service mapping** — Maps AWS resources to Azure equivalents with similarity scores and migration guidance
+- **GCP service mapping** — Maps 50+ GCP services to Azure equivalents with SKU-level recommendations for Compute Engine, Cloud SQL, and Memorystore
 - **Disk caching** — Falls back to cached rules when offline; static JSON overrides for manually verified corrections
 - **Smart type normalizer** — 150+ display name → ARM type mappings, parent type matching, suffix matching, fuzzy matching
 - **Drag & drop upload** — .xlsx, .xls, .csv supported (max 10 MB)
 - **Interactive results grid** — Clickable summary cards, real-time text search, colour-coded status badges
-- **Rich Excel reports** — 7 sheets: Assessment Data, Summary Dashboard, Pivot by Provider, Pivot by Resource Group, Pivot by Location, Status Sheet, Action Sheet
+- **Rich Excel reports** — 7 sheets for subscription/region modes; 6 dedicated sheets each for AWS and GCP modes (Executive Summary, Service Mapping, By Category, By Service Group, Migration Roadmap, Risk Matrix)
 - **Jio data management** — Upload updated Jio availability Excel to refresh service/VM data (220+ services, 124 VM series)
 - **Manual refresh** — Re-fetch rules from Microsoft Learn via the toolbar button
 - **Version display** — App version shown in the topbar and backend health endpoint
@@ -112,6 +120,8 @@ Open http://localhost:4200
 | POST | `/api/assess-json` | Upload Excel, get JSON results for subscription move |
 | POST | `/api/assess-region-json` | Upload Excel, get JSON results for region move |
 | POST | `/api/assess-jio-json` | Upload Excel, get JSON results for Jio availability |
+| POST | `/api/assess-aws-json` | Upload Excel, get JSON results for AWS to Azure mapping |
+| POST | `/api/assess-gcp-json` | Upload Excel, get JSON results for GCP to Azure mapping |
 | GET | `/api/download/:id` | Download a previously generated assessment file |
 | GET | `/api/rules` | Return current rules, counts, source, and metadata |
 | POST | `/api/rules/refresh` | Force re-fetch live rules from Microsoft Learn |
@@ -145,6 +155,7 @@ The RESOURCE TYPE column accepts both Azure portal display names (e.g. "Virtual 
 
 ## Excel Output (Report Sheets)
 
+### Subscription / Region / Jio Mode (7 sheets)
 | Sheet | Content |
 |-------|---------|
 | Assessment Data | All resources with colour-coded status, auto-filters, frozen header |
@@ -155,12 +166,34 @@ The RESOURCE TYPE column accepts both Azure portal display names (e.g. "Virtual 
 | Status Sheet | Resources grouped by status (Yes / No / Conditional / Review) |
 | Action Sheet | Actionable items grouped by status |
 
+### AWS to Azure Mode (6 sheets — distinct format)
+| Sheet | Content |
+|-------|---------|
+| Executive Summary | Migration readiness badge, coverage score, KPI cards, effort breakdown by phase, scope, next steps |
+| Service Mapping | Full data table with #, AWS Service, Azure Equivalent, Category, Similarity, Migration Strategy, Effort, Notes |
+| By Category | Direct/Similar/Partial/No Mapping breakdown with strategy, effort, timeline, example services, visual bars |
+| By AWS Namespace | Grouped by AWS namespace (EC2, S3, Lambda, etc.) with coverage %, readiness indicator, mapped Azure targets |
+| Migration Roadmap | Phased migration plan (Phase 1-4) with services grouped by wave, strategy, effort, and timeline |
+| Risk Matrix | Priority-ranked risk table (P1, P2...) with risk level, impact, strategy, and required actions |
+
+### GCP to Azure Mode (6 sheets — Google-branded format)
+| Sheet | Content |
+|-------|---------|
+| Executive Summary | Migration readiness badge, coverage score, KPI cards, effort breakdown by phase, scope, next steps |
+| Service Mapping | Full data table with GCP Service, Azure Equivalent, Category, Similarity, SKU Recommendation, Migration Notes |
+| By Category | Compute/Storage/Database/AI-ML/Networking etc. breakdown with strategy, effort, timeline, visual bars |
+| By GCP Service | Grouped by GCP service (Compute Engine, Cloud SQL, etc.) with coverage %, readiness, mapped Azure targets |
+| Migration Roadmap | Phased migration plan (Phase 1-4) with services grouped by wave, strategy, effort, and timeline |
+| Risk Matrix | Priority-ranked risk table with risk level, impact, strategy, and required actions |
+
 ## Build Phases
 
 - **Phase 1** ✅ — Excel upload, rules lookup, enriched Excel download
 - **Phase 2** ✅ — Region move assessment + Jio region availability
 - **Phase 3** ✅ — Live rules from Microsoft Learn with caching + periodic refresh
-- **Phase 4** — Azure login + live validation with Azure move validation APIs
+- **Phase 4** ✅ — AWS to Azure Migration assessment with service mapping, migration roadmap & risk matrix
+- **Phase 5** ✅ — GCP to Azure Migration assessment with 50+ service mappings, SKU recommendations & migration roadmap
+- **Phase 6** — Azure login + live validation with Azure move validation APIs
 
 ## Version History
 
@@ -168,5 +201,8 @@ See [CHANGELOG.md](CHANGELOG.md) for a detailed list of changes in each version.
 
 | Version | Date | Highlights |
 |---------|------|------------|
+| 1.3.0 | 2026-05-20 | GCP to Azure Migration mode — 50+ service mappings, SKU recommendations, 6-sheet Google-branded Excel report |
+| 1.2.1 | 2026-05-20 | Enhanced AWS Excel report — 6 dedicated sheets with migration roadmap, risk matrix, effort estimates, and phased planning |
+| 1.2.0 | 2026-05-19 | AWS to Azure Migration mode, 4th assessment card, service mapping with similarity scoring, isolated assessor modules |
 | 1.1.0 | 2026-05-15 | Periodic 6-hour rule refresh, Live/Static badge fix, version display in app, README overhaul |
 | 1.0.0 | 2026-05-15 | Initial release — 3 assessment modes, live rules, rich Excel reports |

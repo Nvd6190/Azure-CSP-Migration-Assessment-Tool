@@ -10,8 +10,8 @@ import { AssessmentResponse } from '../models/assessment.model';
   template: `
     <div class="upload-card">
       <div class="upload-header">
-        <h2>Upload Azure Resource Export</h2>
-        <p>Upload your Azure resource .xlsx export file to assess {{ mode === 'jio' ? 'Jio region availability' : mode === 'region' ? 'region move support' : 'subscription move support' }}</p>
+        <h2>{{ mode === 'aws' ? 'Upload AWS Resource Inventory' : mode === 'gcp' ? 'Upload GCP Resource Inventory' : 'Upload Azure Resource Export' }}</h2>
+        <p>Upload your {{ mode === 'aws' ? 'AWS resource inventory (.xlsx or .json) to map services to Azure equivalents with SKU recommendations' : mode === 'gcp' ? 'GCP resource inventory (.xlsx or .csv) to map services to Azure equivalents with migration guidance' : mode === 'jio' ? 'Azure resource .xlsx export file to assess Jio region availability' : mode === 'region' ? 'Azure resource .xlsx export file to assess region move support' : 'Azure resource .xlsx export file to assess subscription move support' }}</p>
       </div>
 
       <div
@@ -182,8 +182,9 @@ import { AssessmentResponse } from '../models/assessment.model';
   `]
 })
 export class UploadComponent {
-  @Input() mode: 'subscription' | 'region' | 'jio' = 'subscription';
+  @Input() mode: 'subscription' | 'region' | 'jio' | 'aws' | 'gcp' = 'subscription';
   @Output() assessmentComplete = new EventEmitter<AssessmentResponse>();
+  @Output() fileSelected = new EventEmitter<File>();
   @Output() reset = new EventEmitter<void>();
 
   selectedFile: File | null = null;
@@ -235,6 +236,7 @@ export class UploadComponent {
     }
     this.selectedFile = file;
     this.errorMessage = '';
+    this.fileSelected.emit(file);
   }
 
   removeFile(event: Event): void {
@@ -248,11 +250,15 @@ export class UploadComponent {
     this.isLoading = true;
     this.errorMessage = '';
 
-    const request$ = this.mode === 'jio'
-      ? this.migrationService.assessJioFile(this.selectedFile)
-      : this.mode === 'region'
-        ? this.migrationService.assessRegionFile(this.selectedFile)
-        : this.migrationService.assessFile(this.selectedFile);
+    const request$ = this.mode === 'aws'
+      ? this.migrationService.assessAwsFile(this.selectedFile)
+      : this.mode === 'gcp'
+        ? this.migrationService.assessGcpFile(this.selectedFile)
+        : this.mode === 'jio'
+          ? this.migrationService.assessJioFile(this.selectedFile)
+          : this.mode === 'region'
+            ? this.migrationService.assessRegionFile(this.selectedFile)
+            : this.migrationService.assessFile(this.selectedFile);
 
     request$.subscribe({
       next: (result) => {
